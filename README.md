@@ -43,16 +43,64 @@ Next thing you have to do is download Planemo from the [Github repository][23]. 
 
 ### Downloading third party libraries
 Planemo requires certain third party libraries in order to work. Once you have Dart installed you can simply use the [pub tool][25] by type `pub install`, standing in the project folder.
-This should download any third party libraries and put them in the *packages* folder in the project folder.
+This should download any third party libraries and put them in the */packages/* folder in the project folder.
 
-### Creating configuration script that launches Planemo
+### Creating a launcher script
 Launching Planemo requires that you have very basic understanding of the [Dart language][26], or at least [Object-oriented programming][27].
 
 In order to start Planemo you actually need to create a Dart source code file, in the newly downloaded project folder, and inside that invoke an instance
 of the `Planemo` class with a set of configurations (an instance of the `PlanemoConfiguration` class). It is on the `PlanemoConfiguration` instance you then setup
 all the various configurations (such as the root folder, what reporters to use, etc) and plugins you want to enable. The best way to understand how exactly
-this can be done is by looking at a real example.
+this can be done is by looking at a real example and follow the code comments. This is the launcher script (checkplanemo.dart) that checks the Planemo project itself:
 
+	import "Planemo.dart";
+	import "src/core/PlanemoConfiguration.dart";
+	import "src/reporting/DefaultReporter.dart";
+	import "src/reporting/DefaultJUnitTestReporter.dart";
+	import "src/plugins/CheckDirectoryNamePlugin.dart";
+	import "src/plugins/CheckJavaScriptFileNamePlugin.dart";
+	import "src/plugins/CheckHTMLFileNamePlugin.dart";
+	import "src/plugins/CheckLESSFileNamePlugin.dart";
+	import "src/plugins/CheckForEmptyDirectoriesPlugin.dart";
+	import "src/plugins/CheckForEmptyFilesPlugin.dart";
+	import "src/plugins/CheckForDuplicatedFilesPlugin.dart";
+
+	void main(List<String> arguments) {
+
+		bool useColors = true;
+		bool verbose = false;
+
+		/*
+		 * Planemo configuration
+		 */
+
+		// Fetch the default reporter to use
+		DefaultReporter defaultReporter = new DefaultReporter(useColors, verbose);
+		List<Reporter> reporters = [defaultReporter];
+
+		// Create the configuration object
+		PlanemoConfiguration configuration = new PlanemoConfiguration(reporters);
+		configuration.setSourceRoot(".");
+
+		// Directories to ignore
+		configuration.addDirectoryToIgnore(".\\.git");
+		configuration.addDirectoryToIgnore(".\\.idea");
+		configuration.addDirectoryToIgnore(".\\packages");
+		configuration.addDirectoryToIgnore(".\\resources");
+
+		// Plugins to invoke
+		configuration.addPlugin(new CheckDirectoryNamePlugin("^[\\.a-z|-]+\$", userMessage: "This is a custom message."));
+		configuration.addPlugin(new CheckJavaScriptFileNamePlugin("^[a-z][a-z0-9|-]*\\.(?:spec\\.js|js)\$"));
+		configuration.addPlugin(new CheckHTMLFileNamePlugin("^[a-z][a-z0-9|-]*\\.(?:icons\\.html|ng\\.html|html)\$"));
+		configuration.addPlugin(new CheckLESSFileNamePlugin("^[a-z][a-z0-9|-]*\\.less\$"));
+		configuration.addPlugin(new CheckForEmptyDirectoriesPlugin());
+		configuration.addPlugin(new CheckForEmptyFilesPlugin());
+		configuration.addPlugin(new CheckForDuplicatedFilesPlugin());
+
+		// Start Planemo
+		new Planemo(configuration);
+
+	}
 
 
 
