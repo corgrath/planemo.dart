@@ -48,7 +48,7 @@ This should download any third party libraries and put them in the */packages/* 
 ### Creating a launcher script
 Launching Planemo requires that you have very basic understanding of the [Dart language][26], or at least [Object-oriented programming][27].
 
-In order to start Planemo you actually need to create a Dart source code file, in the newly downloaded project folder, and inside that invoke an instance
+In order to start Planemo you actually need to create a Dart source code file, in the newly downloaded project folder, where we need to invoke an instance
 of the `Planemo` class with a set of configurations (an instance of the `PlanemoConfiguration` class). It is on the `PlanemoConfiguration` instance you then setup
 all the various configurations (such as the root folder, what reporters to use, etc) and plugins you want to enable. The best way to understand how exactly
 this can be done is by looking at a real example and follow the code comments. This is the launcher script (checkplanemo.dart) that checks the Planemo project itself:
@@ -101,6 +101,12 @@ this can be done is by looking at a real example and follow the code comments. T
 		new Planemo(configuration);
 
 	}
+
+### Launching Planemo
+
+Given that Dart is globally installed on your system, you can simply type `dart [your-launcher-script}.dart` to launch Planemo with your own configurations.
+
+If you want to try out Planemo's own analysis, you can try it by typing `dart checkplanemo.dart`.
 
 
 
