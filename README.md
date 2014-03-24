@@ -1,4 +1,4 @@
-![Planemo logotype](https://github.com/corgrath/planemo.dart/master/resources/planemo_github_version.png)
+![Planemo logotype](https://github.com/corgrath/planemo.dart/master/resources/tree/planemo_github_version.png)
 
 
 
