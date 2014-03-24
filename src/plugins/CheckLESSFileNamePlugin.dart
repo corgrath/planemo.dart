@@ -11,7 +11,7 @@ import "../services/DataEventService.dart";
 
 class CheckLESSFileNamePlugin extends AbstractCheckFileNamePlugin implements OnLESSFileFoundObserverInterface {
 
-    CheckLESSFileNamePlugin({String pattern: "^[a-z|-]+\\.less\$", String userMessage}): super(pattern, userMessage);
+    CheckLESSFileNamePlugin(String pattern, { String userMessage}): super(pattern, userMessage);
 
     void init(DataEventService dataEventService) {
         dataEventService.registerOnLESSFileFound(this);

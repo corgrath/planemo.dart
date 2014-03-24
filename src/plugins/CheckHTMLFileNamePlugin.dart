@@ -11,7 +11,7 @@ import "../services/DataEventService.dart";
 
 class CheckHTMLFileNamePlugin extends AbstractCheckFileNamePlugin implements OnHTMLFileFoundObserverInterface {
 
-    CheckHTMLFileNamePlugin({String pattern: "^[a-z|-]+\\.(?:icons\\.html|ng\\.html|html)\$", String userMessage}): super(pattern, userMessage);
+    CheckHTMLFileNamePlugin(String pattern, { String userMessage}): super(pattern, userMessage);
 
     void init(DataEventService dataEventService) {
         dataEventService.registerOnHTMLFileFound(this);

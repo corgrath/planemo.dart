@@ -12,7 +12,7 @@ class CheckDirectoryNamePlugin extends AbstractPlugin implements OnDirectoryFoun
 
     String pattern;
 
-    CheckDirectoryNamePlugin({String this.pattern: "^[a-z|-]+\$", String userMessage:""}): super(userMessage);
+    CheckDirectoryNamePlugin(String this.pattern, {String userMessage:""}): super(userMessage);
 
     void init(DataEventService dataEventService) {
         dataEventService.registerOnDirectoryFound(this);

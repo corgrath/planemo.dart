@@ -9,8 +9,6 @@ class DefaultReporter implements Reporter {
     bool _verbosed;
 
     DefaultReporter(bool this._colored, bool this._verbosed) {
-
-
         verbose("Default reporter created. Colored mode is \"$_colored\" and verbosed is \"$_verbosed\".");
     }
 
@@ -72,9 +70,7 @@ class DefaultReporter implements Reporter {
 
             print("\r\n${getRedColor()}Planemo static code analysis failed with \"$numberOfErrors\" errors after $executionDuration ms.${getCloseColor()}");
 
-        }
-
-        else {
+        } else {
 
             print("\r\n${getGreenColor()}Planemo static code analysis done after $executionDuration ms. No errors found. Happy times!${getCloseColor()}");
 

@@ -28,7 +28,7 @@ abstract class AbstractCheckFileNamePlugin extends AbstractPlugin {
             error.addMetaData("filename", fileName);
             error.addMetaData("fullpath", fullPath);
 
-            reportError.error(error);
+            reportError(error);
 
         }
 
