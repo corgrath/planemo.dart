@@ -2,7 +2,7 @@ import "dart:io";
 import "../core/ObserverList.dart";
 import "../reporting/Reporters.dart";
 import "../reporting/ErrorReporter.dart";
-import "../data_collectors/interfaces/data-event-observer-interfaces.dart";
+import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 
 class DataEventService {
 

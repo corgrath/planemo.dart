@@ -14,23 +14,13 @@ class DirectoryFoundDataCollector extends AbstractDataCollector implements OnDir
 
     void onDirectoryFound(Reporters reporters, Directory directory, List<Directory> directoriesToIgnore) {
 
-        reporters.verbose("Evaluating the directory \"$directory\".");
+        reporters.verbose("Evaluating the directory \"${directory.path}\".");
 
         if (!directory.existsSync()) {
-            throw new Exception("The directory \"$directory\" does not exist.");
+            throw new Exception("The directory \"${directory.path}\" does not exist.");
         }
 
-        for (Directory directoryToIgnore in directoriesToIgnore) {
-
-            //            print("0 " + directory.path);
-            //            print("1 " + directoryToIgnore.path);
-            if (DirectoryUtil.isSameDirectory(directory, directoryToIgnore)) {
-
-                reporters.verbose("Ignoring to go into directory \"$directory.path\".");
-                return;
-            }
-
-        }
+        print("passed $directory");
 
         //        if (directory.path.contains("translate")) {
         //            print(directory);
@@ -44,13 +34,28 @@ class DirectoryFoundDataCollector extends AbstractDataCollector implements OnDir
         //        }
 
         List<FileSystemEntity> items = directory.listSync();
+        //        print("contents of $directory is $items");
 
-        for (FileSystemEntity entity in items) {
+        forEachEntity: for (FileSystemEntity entity in items) {
 
             if (entity is Directory) {
 
                 reporters.verbose("Found the new directory \"$entity\".");
+                //                print("Found the new directory \"$entity\".");
 
+                // Check if we should ignore the directory
+                for (Directory directoryToIgnore in directoriesToIgnore) {
+
+                    //                    print("0 " + entity.path);
+                    //                    print("1 " + directoryToIgnore.path);
+                    if (DirectoryUtil.isSameDirectory(entity, directoryToIgnore)) {
+                        //                        print("Ignoring to go into directory \"${entity.path}\".");
+                        reporters.verbose("Ignoring to go into directory \"${entity.path}\".");
+                        continue forEachEntity;
+                    }
+
+                }
+                //                print("really passed \"$entity\".");
                 dataEventService.directoryFound(entity, directoriesToIgnore);
 
             } else if (entity is File) {

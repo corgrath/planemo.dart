@@ -4,9 +4,9 @@ import "src/core/PlanemoConfiguration.dart";
 import "src/services/DataEventService.dart";
 import "src/reporting/Reporters.dart";
 import "src/reporting/ErrorReporter.dart";
-import "src/data_collectors/DirectoryFoundDataCollector.dart";
-import "src/data_collectors/FileFoundDataCollector.dart";
-import "src/data_collectors/interfaces/data-event-observer-interfaces.dart";
+import "src/datacollectors/DirectoryFoundDataCollector.dart";
+import "src/datacollectors/FileFoundDataCollector.dart";
+import "src/datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "src/plugins/AbstractPlugin.dart";
 import "src/core/ObserverList.dart";
 

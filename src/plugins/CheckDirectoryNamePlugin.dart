@@ -3,7 +3,7 @@ import "package:path/path.dart" as path;
 
 import "AbstractPlugin.dart";
 import "../error/StaticCodeAnalysisError.dart";
-import "../data_collectors/interfaces/data-event-observer-interfaces.dart";
+import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/ErrorReporter.dart";
 import "../reporting/Reporters.dart";
 import "../services/DataEventService.dart";

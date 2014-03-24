@@ -1,4 +1,4 @@
-import "../data_collectors/interfaces/data-event-observer-interfaces.dart";
+import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 
 class ObserverList<Observer> {
 

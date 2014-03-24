@@ -45,7 +45,6 @@ Next thing you have to do is download Planemo from the [Github repository][23]. 
 Planemo requires certain third party libraries in order to work. Once you have Dart installed you can simply use the [pub tool][25] by type `pub install`, standing in the project folder.
 This should download any third party libraries and put them in the *packages* folder in the project folder.
 
-
 ### Creating configuration script that launches Planemo
 Launching Planemo requires that you have very basic understanding of the [Dart language][26], or at least [Object-oriented programming][27].
 
