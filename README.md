@@ -2,8 +2,9 @@
 
 
 
+
 Planemo
-=================================================
+=======================================================================================================================
 Planemo is a [plugin-friendly][01] [open source][02] [software quality platform][03] written in the [Dart][04].
 
 [01]: http://en.wikipedia.org/wiki/Plug-in_%28computing%29
@@ -13,8 +14,9 @@ Planemo is a [plugin-friendly][01] [open source][02] [software quality platform]
 
 
 
+
 No seriously, what is it?
--------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 Planemo is basically a [static code analysis tool][11] written in [Dart programming language][12]. Its main goal is to read everything in given directory (and recursively downwards) and
 checks any found file (no matter if its its .js, .css, .html or whatever) and its contents against a set of rules, configurable by the user.
 
@@ -32,8 +34,9 @@ Fun fact #184: The word *Planemo* comes from *[planetary-mass object][15]*!
 
 
 
+
 Downloading and running Planemo
--------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 ### Installing Dart
 Planemo runs on the [Dart VM][21], so make sure you have that [downloaded and installed][22] first.
 
@@ -104,11 +107,9 @@ this can be done is by looking at a real example and follow the code comments. T
 
 ### Launching Planemo
 
-Given that Dart is globally installed on your system, you can simply type `dart [your-launcher-script}.dart` to launch Planemo with your own configurations.
+Given that Dart is globally installed on your system, you can simply type `dart [your-launcher-script}.dart` to launch Planemo with your own launcher file.
 
-If you want to try out Planemo's own analysis, you can try it by typing `dart checkplanemo.dart`.
-
-
+If you want to try out Planemo's own launcher file, you can type `dart checkplanemo.dart`.
 
 [21]: https://www.dartlang.org/docs/dart-up-and-running/contents/ch04-tools-dart-vm.html
 [22]: https://www.dartlang.org/tools/download.html
@@ -119,3 +120,48 @@ If you want to try out Planemo's own analysis, you can try it by typing `dart ch
 [27]: http://en.wikipedia.org/wiki/Object-oriented_programming
 
 
+
+
+Available plugins
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+Creating your own reporter
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Building your own plugin
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Found a bug or have a questions?
+-----------------------------------------------------------------------------------------------------------------------
+If you have found a bug and want to report it, or have any other feedback or questions, you can simply [create an issue][1].
+However, creating [pull requests][62] with fixes would be more appreciable as it would decrease the time the fix got into the project.
+
+[61]: https://github.com/corgrath/planemo.dart/issues
+[62]: https://help.github.com/articles/using-pull-requests
+
+
+
+Writing tests
+-----------------------------------------------------------------------------------------------------------------------
+
+ For obvious reasons, the more tests we have for Planemo the happier we are. So it is encouraged that we write supporting unit tests for our code.
+
+ Planemo is currently using Mocha and Chai as a part of its test framework. If you are planning to write tests it would be a good idea to look at their individual examples and documentation to better understand how to write new or maintain old tests. If you looking for examples you can find them in the /tests/ folder in this project.
+
+
+If you have found a bug and want to report it, or have any other feedback or questions, you can simply create an issue.
+
+
+
+License
+-----------------------------------------------------------------------------------------------------------------------
+ * Planemo licensed under the Apache License, Version 2.0. See the NOTICE file distributed with this work for additional information regarding copyright ownership.
+ * Planemo logotype images Copyright (C) Christoffer Pettersson, christoffer[at]christoffer[dot]me. All Rights Reserved! Please contact Christoffer regarding the possible use of these images.
