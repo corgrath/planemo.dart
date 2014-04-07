@@ -133,7 +133,7 @@ Creating your own reporter is quite simple. Simply create your own class that im
 
 	class MyOwnReporter implements Reporter {
 
-By implementing `Reporter` you need to implement the following methods as specified in the `Reporter.dart`:
+By implementing `Reporter` you need to implement the following methods as specified abstract class:
 
 	abstract class Reporter {
 
@@ -153,9 +153,53 @@ For a real example, you may look at the source code of the [DefaultReporter][41]
 
 
 
-Building your own plugin
+Creating your own plugin
 -----------------------------------------------------------------------------------------------------------------------
+Writing new plugins to Planemo is fairly easy. A plugin is a stand alone file that is located in the [/src/plugins/][51] folder.
 
+A plugins is simply a class that extends the `AbstractPlugin` class and then a numerous interfaces, depending on what kind of data the plugin is interested in.
+
+To get a better understanding of how a simple plugin looks like, lets look at an existing one. The `CheckDirectoryNamePlugin` plugin that has the responsibility
+to validate directory names, given a [regular expression][52] pattern.
+
+
+	class CheckDirectoryNamePlugin extends AbstractPlugin implements OnDirectoryFoundObserverInterface {
+
+		String pattern;
+
+		CheckDirectoryNamePlugin(String this.pattern, {String userMessage:""}): super(userMessage);
+
+		void init(DataEventService dataEventService) {
+			dataEventService.registerOnDirectoryFound(this);
+		}
+
+		void onDirectoryFound(Reporters reporters, Directory directory, List<Directory> directoriesToIgnore) {
+
+			String fileName = path.basename(directory.path);
+			String fullPath = directory.path;
+
+			RegExp expression = new RegExp(pattern);
+
+			Iterable<Match> matches = expression.allMatches(fileName);
+
+			if (matches.isEmpty) {
+
+				StaticCodeAnalysisError error = new StaticCodeAnalysisError("The directory name \"$fileName\" is not valid as it does not comply with the pattern \"$pattern\".", userMessage);
+				error.addMetaData("filename", fileName);
+				error.addMetaData("fullpath", fullPath);
+				error.addMetaData("pattern", pattern);
+
+				reportError(error);
+
+			}
+
+		}
+
+	}
+
+
+[51]: https://github.com/corgrath/planemo.dart/tree/master/src/plugins
+[52]: http://en.wikipedia.org/wiki/Regular_expression
 
 
 
@@ -169,15 +213,11 @@ However, creating [pull requests][62] with fixes would be more appreciable as it
 
 
 
+
 Writing tests
 -----------------------------------------------------------------------------------------------------------------------
 
- For obvious reasons, the more tests we have for Planemo the happier we are. So it is encouraged that we write supporting unit tests for our code.
 
- Planemo is currently using Mocha and Chai as a part of its test framework. If you are planning to write tests it would be a good idea to look at their individual examples and documentation to better understand how to write new or maintain old tests. If you looking for examples you can find them in the /tests/ folder in this project.
-
-
-If you have found a bug and want to report it, or have any other feedback or questions, you can simply create an issue.
 
 
 Contributors
@@ -185,6 +225,8 @@ Contributors
 The list of [contributors][81] can be found here.
 
 [81]: https://github.com/corgrath/planemo.dart/graphs/contributors
+
+
 
 
 License
