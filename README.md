@@ -159,47 +159,55 @@ Writing new plugins to Planemo is fairly easy. A plugin is a stand alone file th
 
 A plugins is simply a class that extends the `AbstractPlugin` class and then a numerous interfaces, depending on what kind of data the plugin is interested in.
 
-To get a better understanding of how a simple plugin looks like, lets look at an existing one. The `CheckDirectoryNamePlugin` plugin that has the responsibility
-to validate directory names, given a [regular expression][52] pattern.
+To get a better understanding of how a simple plugin looks like, lets look at an existing one. The `CheckDirectoryNamePlugin` ([real source here][52]) plugin that has the responsibility
+to validate directory names, given a [regular expression][53] pattern.
+
+	01 class CheckDirectoryNamePlugin extends AbstractPlugin implements OnDirectoryFoundObserverInterface {
+	02
+	03 	String pattern;
+	04
+	05 	CheckDirectoryNamePlugin(String this.pattern, {String userMessage:""}): super(userMessage);
+	06
+	07 	void init(DataEventService dataEventService) {
+	08 		dataEventService.registerOnDirectoryFound(this);
+	09 	}
+	10
+	11 	void onDirectoryFound(Reporters reporters, Directory directory, List<Directory> directoriesToIgnore) {
+	12
+	13 		String fileName = path.basename(directory.path);
+	14 		String fullPath = directory.path;
+	15
+	16 			RegExp expression = new RegExp(pattern);
+	17
+	18 			Iterable<Match> matches = expression.allMatches(fileName);
+	19
+	20 			if (matches.isEmpty) {
+	21
+	22 				StaticCodeAnalysisError error = new StaticCodeAnalysisError("The directory name \"$fileName\" is not valid as it does not comply with the pattern \"$pattern\".", userMessage);
+	23 				error.addMetaData("filename", fileName);
+	24 				error.addMetaData("fullpath", fullPath);
+	25 				error.addMetaData("pattern", pattern);
+	26
+	27 				reportError(error);
+	28
+	29 			}
+	30
+	31 		}
+	32
+	33 	}
 
 
-	class CheckDirectoryNamePlugin extends AbstractPlugin implements OnDirectoryFoundObserverInterface {
+On row `01` we can see that this plugin extends `AbstractPlugin` (like all plugins needs to do) but then implements `OnDirectoryFoundObserverInterface`.
+By implementing `OnDirectoryFoundObserverInterface` the class needs to implement the method `onDirectoryFound`. Adding this interface is also required
+in order to register the plugin into the data event service on row `08`. By registering the plugin into the data event service the method `
 
-		String pattern;
-
-		CheckDirectoryNamePlugin(String this.pattern, {String userMessage:""}): super(userMessage);
-
-		void init(DataEventService dataEventService) {
-			dataEventService.registerOnDirectoryFound(this);
-		}
-
-		void onDirectoryFound(Reporters reporters, Directory directory, List<Directory> directoriesToIgnore) {
-
-			String fileName = path.basename(directory.path);
-			String fullPath = directory.path;
-
-			RegExp expression = new RegExp(pattern);
-
-			Iterable<Match> matches = expression.allMatches(fileName);
-
-			if (matches.isEmpty) {
-
-				StaticCodeAnalysisError error = new StaticCodeAnalysisError("The directory name \"$fileName\" is not valid as it does not comply with the pattern \"$pattern\".", userMessage);
-				error.addMetaData("filename", fileName);
-				error.addMetaData("fullpath", fullPath);
-				error.addMetaData("pattern", pattern);
-
-				reportError(error);
-
-			}
-
-		}
-
-	}
+On row `05` is the constructor. As you can see when invoking a new instance of this class, the String argument *pattern*, while *userMessage* is optional.
+The *pattern* argument
 
 
 [51]: https://github.com/corgrath/planemo.dart/tree/master/src/plugins
-[52]: http://en.wikipedia.org/wiki/Regular_expression
+[52]: https://github.com/corgrath/planemo.dart/blob/master/src/plugins/CheckDirectoryNamePlugin.dart
+[53]: http://en.wikipedia.org/wiki/Regular_expression
 
 
 
