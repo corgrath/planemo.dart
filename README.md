@@ -202,7 +202,10 @@ By implementing `OnDirectoryFoundObserverInterface` the class needs to implement
 in order to register the plugin into the data event service on row `08`. By registering the plugin into the data event service the method `
 
 On row `05` is the constructor. As you can see when invoking a new instance of this class, the String argument *pattern*, while *userMessage* is optional.
-The *pattern* argument
+The *pattern* argument is later on used in the `onDirectoryFound` method. The `onDirectoryFound` method gets called each time Planemo finds a new directory.
+
+Reporting errors in a plugins is done asynchronous, meaning a plugin can report multiple errors without halting the code execution. This is done by calling
+the `reportError` method on row `27` by passing in a newly created `StaticCodeAnalysisError` instance.
 
 
 [51]: https://github.com/corgrath/planemo.dart/tree/master/src/plugins
