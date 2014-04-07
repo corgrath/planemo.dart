@@ -107,7 +107,7 @@ this can be done is by looking at a real example and follow the code comments. T
 
 ### Launching Planemo
 
-Given that Dart is globally installed on your system, you can simply type `dart [your-launcher-script}.dart` to launch Planemo with your own launcher file.
+Given that Dart is globally installed on your system, you can simply type `dart [your-launcher-script].dart` to launch Planemo with your own launcher file.
 
 If you want to try out Planemo's own launcher file, you can type `dart checkplanemo.dart`.
 
@@ -129,7 +129,23 @@ Available plugins
 
 Creating your own reporter
 -----------------------------------------------------------------------------------------------------------------------
+Creating your own reporter is quite simple. Simply create your own class that implements `Reporter`, for example:
 
+	class MyOwnReporter implements Reporter {
+
+By implementing `Reporter` you need to implement the following methods as specified in the `Reporter.dart`:
+
+	abstract class Reporter {
+
+		void start(String version);
+
+		void verbose(String message);
+
+		void error(StaticCodeAnalysisError error);
+
+		void done(ErrorReporter errorReporter, int executionDuration);
+
+	}
 
 
 
@@ -141,7 +157,7 @@ Building your own plugin
 
 Found a bug or have a questions?
 -----------------------------------------------------------------------------------------------------------------------
-If you have found a bug and want to report it, or have any other feedback or questions, you can simply [create an issue][1].
+If you have found a bug and want to report it, or have any other feedback or questions, you can simply [create an issue][61].
 However, creating [pull requests][62] with fixes would be more appreciable as it would decrease the time the fix got into the project.
 
 [61]: https://github.com/corgrath/planemo.dart/issues
@@ -160,8 +176,14 @@ Writing tests
 If you have found a bug and want to report it, or have any other feedback or questions, you can simply create an issue.
 
 
+Contributors
+-----------------------------------------------------------------------------------------------------------------------
+The list of [contributors][81] can be found here.
+
+[81]: https://github.com/corgrath/planemo.dart/graphs/contributors
+
 
 License
 -----------------------------------------------------------------------------------------------------------------------
  * Planemo licensed under the Apache License, Version 2.0. See the NOTICE file distributed with this work for additional information regarding copyright ownership.
- * Planemo logotype images Copyright (C) Christoffer Pettersson, christoffer[at]christoffer[dot]me. All Rights Reserved! Please contact Christoffer regarding the possible use of these images.
+ * Planemo logotype images Copyright (c) Christoffer Pettersson, christoffer[at]christoffer[dot]me. All Rights Reserved! Please contact Christoffer regarding the possible use of these images.
