@@ -147,6 +147,10 @@ By implementing `Reporter` you need to implement the following methods as specif
 
 	}
 
+For a real example, you may look at the source code of the [DefaultReporter][41] class.
+
+[41]: DefaultReporter
+
 
 
 Building your own plugin
