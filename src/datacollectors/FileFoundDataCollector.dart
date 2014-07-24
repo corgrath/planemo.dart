@@ -26,34 +26,34 @@ import "../services/DataEventService.dart";
 
 class FileFoundDataCollector extends AbstractDataCollector implements OnFileFoundObserverInterface {
 
-    FileFoundDataCollector(Reporters reporters, DataEventService dataEventService) : super(reporters, dataEventService);
+	FileFoundDataCollector(Reporters reporters, DataEventService dataEventService) : super(reporters, dataEventService);
 
-    void onFileFound(Reporters reporters, File file, String fileName) {
+	void onFileFound(Reporters reporters, File file, String fileName) {
 
-        reporters.verbose("Evaluating the file \"$file\".");
+		reporters.verbose("Evaluating the file \"$file\".");
 
-        if (!file.existsSync()) {
-            throw new Exception("The file \"$directory\" does not exist.");
-        }
+		if (!file.existsSync()) {
+			throw new Exception("The file \"$file\" does not exist.");
+		}
 
-        if (isJavaScriptFile(file)) {
-            dataEventService.javaScriptFileFound(file);
-            return;
-        }
+		if (isJavaScriptFile(file)) {
+			dataEventService.javaScriptFileFound(file);
+			return;
+		}
 
-        if (isHTMLFile(file)) {
-            dataEventService.HTMLFileFound(file);
-            return;
-        }
+		if (isHTMLFile(file)) {
+			dataEventService.HTMLFileFound(file);
+			return;
+		}
 
-    }
+	}
 
-    bool isJavaScriptFile(File file) {
-        return file.path.toLowerCase().endsWith(".js");
-    }
+	bool isJavaScriptFile(File file) {
+		return file.path.toLowerCase().endsWith(".js");
+	}
 
-    bool isHTMLFile(File file) {
-        return file.path.toLowerCase().endsWith(".html");
-    }
+	bool isHTMLFile(File file) {
+		return file.path.toLowerCase().endsWith(".html");
+	}
 
 }
