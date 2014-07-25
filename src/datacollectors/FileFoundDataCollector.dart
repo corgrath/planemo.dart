@@ -15,8 +15,11 @@
 * information regarding copyright ownership.
 */
 
+library FileFoundDataCollector;
+
 import "dart:io";
 
+import "../core/PlanemoConfiguration.dart";
 import "./AbstractDataCollector.dart";
 import "./interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
@@ -26,7 +29,9 @@ import "../services/DataEventService.dart";
 
 class FileFoundDataCollector extends AbstractDataCollector implements OnFileFoundObserverInterface {
 
-	FileFoundDataCollector(Reporters reporters, DataEventService dataEventService) : super(reporters, dataEventService);
+	final PlanemoConfiguration _configuration;
+
+	FileFoundDataCollector(PlanemoConfiguration this._configuration, Reporters reporters, DataEventService dataEventService) : super(reporters, dataEventService);
 
 	void onFileFound(Reporters reporters, File file, String fileName) {
 
@@ -38,12 +43,32 @@ class FileFoundDataCollector extends AbstractDataCollector implements OnFileFoun
 
 		if (isJavaScriptFile(file)) {
 			dataEventService.javaScriptFileFound(file);
-			return;
 		}
 
 		if (isHTMLFile(file)) {
 			dataEventService.HTMLFileFound(file);
-			return;
+		}
+//		if (file.path.endsWith(".spec.js")) {
+//
+//			print(file.path);
+//			print(_configuration.readFilePattern);
+//
+//			print(file.path.contains(regexp));
+//
+//		}
+
+		if (_configuration.readFilePattern != null) {
+
+			RegExp regexp = new RegExp(_configuration.readFilePattern);
+
+			if (file.path.contains(regexp)) {
+
+				reporters.verbose("Reading file \"${file}\".");
+
+				String contents = file.readAsStringSync();
+				dataEventService.onFileRead(file, fileName, contents);
+
+			}
 		}
 
 	}

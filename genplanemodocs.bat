@@ -1,5 +1,1 @@
-import "tests/core/PlanemoConfiguration.test.dart" as PlanemoConfiguration;
-
-void main() {
-    PlanemoConfiguration.main();
-}
+docgen --out=docs/ --serve ./src/

@@ -21,53 +21,43 @@ import "../reporting/DefaultReporter.dart";
 
 class PlanemoConfiguration {
 
-    String _sourceRoot;
+	String sourceRoot;
+	List<String> _directoriesToIgnore;
+	List<AbstractPlugin> _plugins;
+	List<Reporter> _reporters;
+	String readFilePattern;
 
-    List<String> _directoriesToIgnore;
+	PlanemoConfiguration(List<Reporter> this._reporters) {
+		_directoriesToIgnore = new List<String>();
+		_plugins = new List<AbstractPlugin>();
+	}
 
-    List<AbstractPlugin> _plugins;
+	void addDirectoryToIgnore(String directory) {
+		_directoriesToIgnore.add(directory);
+	}
 
-    List<Reporter> _reporters;
+	List<String> getDirectoriesToIgnore() {
+		return _directoriesToIgnore;
+	}
 
-    PlanemoConfiguration(List<Reporter> this._reporters) {
-        _directoriesToIgnore = new List<String>();
-        _plugins = new List<AbstractPlugin>();
-    }
+	void addPlugin(AbstractPlugin plugin) {
+		_plugins.add(plugin);
+	}
 
-    void setSourceRoot(String root) {
-        _sourceRoot = root;
-    }
+	List<AbstractPlugin> getPlugins() {
+		return _plugins;
+	}
 
-    String getSourceRoot() {
-        return _sourceRoot;
-    }
+	List<Reporter> getReporters() {
+		return _reporters;
+	}
 
-    void addDirectoryToIgnore(String directory) {
-        _directoriesToIgnore.add(directory);
-    }
+	void validate() {
 
-    List<String> getDirectoriesToIgnore() {
-        return _directoriesToIgnore;
-    }
+		if (_reporters.isEmpty) {
+			throw new Exception("List of reporters is empty.");
+		}
 
-    void addPlugin(AbstractPlugin plugin) {
-        _plugins.add(plugin);
-    }
-
-    List<PluginInterface> getPlugins() {
-        return _plugins;
-    }
-
-    List<Reporter> getReporters() {
-        return _reporters;
-    }
-
-    void validate() {
-
-        if (_reporters.isEmpty) {
-            throw new Exception("List of reporters is empty.");
-        }
-
-    }
+	}
 
 }

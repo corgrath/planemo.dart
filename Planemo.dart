@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library Planemo;
+
 import "dart:io";
 
 import "src/core/PlanemoConfiguration.dart";
@@ -27,79 +29,80 @@ import "src/datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "src/plugins/AbstractPlugin.dart";
 import "src/core/ObserverList.dart";
 
-final String VERSION = "0.1-alpha";
+final String VERSION = "0.2";
 
 class Planemo {
 
-    Planemo(PlanemoConfiguration configuration) {
+	Planemo(PlanemoConfiguration configuration) {
 
-        /*
+		/*
          * The setup
          */
 
-        // First thing to do is to validate the configuration
-        configuration.validate();
+		// First thing to do is to validate the configuration
+		configuration.validate();
 
-        // Create and start a stop watch to keep track on the execution time
-        Stopwatch stopwatch = new Stopwatch()..start();
+		// Create and start a stop watch to keep track on the execution time
+		Stopwatch stopwatch = new Stopwatch()
+			..start();
 
-        // Create the reporters
-        Reporters reporters = new Reporters(configuration.getReporters());
+		// Create the reporters
+		Reporters reporters = new Reporters(configuration.getReporters());
 
-        // Tell the reporters Planemo is started
-        reporters.start(VERSION);
+		// Tell the reporters Planemo is started
+		reporters.start(VERSION);
 
-        // Create the special error reporter
-        ErrorReporter errorReporter = new ErrorReporter();
+		// Create the special error reporter
+		ErrorReporter errorReporter = new ErrorReporter();
 
-        // Create the data event hub
-        DataEventService dataEventService = new DataEventService(reporters, errorReporter);
+		// Create the data event hub
+		DataEventService dataEventService = new DataEventService(reporters, errorReporter);
 
-        /*
+		/*
          * Register internal data collectors
          */
 
-        dataEventService.registerOnDirectoryFound(new DirectoryFoundDataCollector(reporters, dataEventService));
-        dataEventService.registerOnFileFound(new FileFoundDataCollector(reporters, dataEventService));
+		dataEventService.registerOnDirectoryFound(new DirectoryFoundDataCollector(reporters, dataEventService));
+		dataEventService.registerOnFileFound(new FileFoundDataCollector(configuration, reporters, dataEventService));
 
-        /*
+		/*
          * Register the user given plugins
          */
 
-        configuration.getPlugins().forEach((plugin) {
-            plugin.registerErrorReporter(reporters, errorReporter);
-            plugin.init(dataEventService);
-        });
+		configuration.getPlugins().forEach((plugin) {
+			plugin.registerErrorReporter(reporters, errorReporter);
+			plugin.init(dataEventService);
+		});
 
-        /*
+		/*
          * Initialize the first source directory
          */
 
-        Directory sourceRootDirectory = new Directory(configuration.getSourceRoot());
-        List<Directory> directoriesToIgnore = _createDirectoriesToIgnore(configuration.getDirectoriesToIgnore());
+		Directory sourceRootDirectory = new Directory(configuration.sourceRoot);
+		List<Directory> directoriesToIgnore = _createDirectoriesToIgnore(configuration.getDirectoriesToIgnore());
 
-        /*
+		/*
          * Go!
          */
 
-        dataEventService.directoryFound(sourceRootDirectory, directoriesToIgnore);
+		dataEventService.directoryFound(sourceRootDirectory, directoriesToIgnore);
 
-        /*
+		/*
          * The aftermath
          */
 
-        // Stop the stop watch and then fetched the elapsed time
-        stopwatch.stop();
-        int duration = stopwatch.elapsedMilliseconds;
+		// Stop the stop watch and then fetched the elapsed time
+		stopwatch.stop();
+		int duration = stopwatch.elapsedMilliseconds;
 
-        // Report that Planemo is done
-        reporters.done(errorReporter, duration);
+		// Report that Planemo is done
+		reporters.done(errorReporter, duration);
 
-        // Exit it
-        int exitCode = errorReporter.getErrors().isEmpty ? 0 : 1;
-        exit(exitCode);
+		// Exit it
+		int exitCode = errorReporter.getErrors().isEmpty ? 0 : 1;
+		exit(exitCode);
 
-    }
+	}
 
 }
 
@@ -109,13 +112,13 @@ class Planemo {
 
 List<Directory> _createDirectoriesToIgnore(List<String> directories) {
 
-    List<Directory> directoriesToIgnore = new List<Directory>();
+	List<Directory> directoriesToIgnore = new List<Directory>();
 
-    for (String directory in directories) {
-        directoriesToIgnore.add(new Directory(directory));
-    }
+	for (String directory in directories) {
+		directoriesToIgnore.add(new Directory(directory));
+	}
 
-    return directoriesToIgnore;
+	return directoriesToIgnore;
 
 }
 

@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library CheckForEmptyDirectoriesPlugin;
+
 import "dart:io";
 import "package:path/path.dart" as path;
 
@@ -29,29 +31,29 @@ import "../services/DataEventService.dart";
 
 class CheckForEmptyDirectoriesPlugin extends AbstractPlugin implements OnDirectoryFoundObserverInterface {
 
-    CheckForEmptyDirectoriesPlugin({String userMessage}): super(userMessage);
+	CheckForEmptyDirectoriesPlugin({String userMessage}): super(userMessage);
 
-    void init(DataEventService dataEventService) {
-        dataEventService.registerOnDirectoryFound(this);
-    }
+	void init(DataEventService dataEventService) {
+		dataEventService.registerOnDirectoryFound(this);
+	}
 
-    onDirectoryFound(Reporters reporters, Directory directory, List<Directory> directoriesToIgnore) {
+	onDirectoryFound(Reporters reporters, Directory directory, List<Directory> directoriesToIgnore) {
 
-        String fileName = path.basename(directory.path);
-        String fullPath = directory.path;
+		String fileName = path.basename(directory.path);
+		String fullPath = directory.path;
 
-        List<FileSystemEntity> items = directory.listSync();
+		List<FileSystemEntity> items = directory.listSync();
 
-        if (items.isEmpty) {
+		if (items.isEmpty) {
 
-            StaticCodeAnalysisError error = new StaticCodeAnalysisError("The directory \"$fileName\" isEmpty.", userMessage);
-            error.addMetaData("filename", fileName);
-            error.addMetaData("fullpath", fullPath);
+			StaticCodeAnalysisError error = new StaticCodeAnalysisError("The directory \"$fileName\" isEmpty.", userMessage);
+			error.addMetaData("filename", fileName);
+			error.addMetaData("fullpath", fullPath);
 
-            reportError(error);
+			reportError(error);
 
-        }
+		}
 
-    }
+	}
 
 }

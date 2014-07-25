@@ -18,27 +18,26 @@
 import "../reporting/Reporters.dart";
 import "../reporting/ErrorReporter.dart";
 import "../error/StaticCodeAnalysisError.dart";
+import "../services/DataEventService.dart";
 
 abstract class AbstractPlugin {
 
-    String userMessage;
+	final String userMessage;
+	Reporters _reporters;
+	ErrorReporter _errorReporter;
 
-    Reporters _reporters;
+	AbstractPlugin(String this.userMessage);
 
-    ErrorReporter _errorReporter;
+	registerErrorReporter(Reporters reporters, ErrorReporter errorReporter) {
+		_reporters = reporters;
+		_errorReporter = errorReporter;
+	}
 
-    AbstractPlugin(String this.userMessage);
+	reportError(StaticCodeAnalysisError error) {
+		_errorReporter.error(error);
+		_reporters.error(error);
+	}
 
-    registerErrorReporter(Reporters reporters, ErrorReporter errorReporter) {
-        _reporters = reporters;
-        _errorReporter = errorReporter;
-    }
-
-    reportError(StaticCodeAnalysisError error) {
-        _errorReporter.error(error);
-        _reporters.error(error);
-    }
-
-    void init(DataEventService dataEventService);
+	void init(DataEventService dataEventService);
 
 }

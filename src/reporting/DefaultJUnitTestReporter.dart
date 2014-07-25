@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library DefaultJUnitTestReporter;
+
 import "dart:io";
 import "dart:convert";
 
@@ -24,75 +26,75 @@ import "../reporting/ErrorReporter.dart";
 
 class DefaultJUnitTestReporter implements Reporter {
 
-    bool verbosed;
+	bool verbosed;
 
-    String _resultsFile;
+	String _resultsFile;
 
-    HtmlEscape _htmlEscaper;
+	HtmlEscape _htmlEscaper;
 
-    DefaultJUnitTestReporter(String this._resultsFile, {bool this.verbosed:false}) {
+	DefaultJUnitTestReporter(String this._resultsFile, {bool this.verbosed:false}) {
 
-        _htmlEscaper = new HtmlEscape();
+		_htmlEscaper = new HtmlEscape();
 
-        verbose("Default JUnit test report created. Path to save the result is \"$_resultsFile\".");
+		verbose("Default JUnit test report created. Path to save the result is \"$_resultsFile\".");
 
-    }
+	}
 
-    /*
+	/*
      * Reporting functions
      */
 
-    void start(String version) {
-    }
+	void start(String version) {
+	}
 
-    void verbose(String message) {
+	void verbose(String message) {
 
-        if (verbosed) {
-            print(message);
-        }
+		if (verbosed) {
+			print(message);
+		}
 
-    }
+	}
 
-    void error(StaticCodeAnalysisError error) {
-    }
+	void error(StaticCodeAnalysisError error) {
+	}
 
-    void done(ErrorReporter errorReporter, int executionDuration) {
+	void done(ErrorReporter errorReporter, int executionDuration) {
 
-        var numberOfErrors = errorReporter.getErrors().length;
+		var numberOfErrors = errorReporter.getErrors().length;
 
-        String xml = "<testsuite tests=\"$numberOfErrors\">\n";
+		String xml = "<testsuite tests=\"$numberOfErrors\">\n";
 
-        for (StaticCodeAnalysisError error in errorReporter.getErrors()) {
+		for (StaticCodeAnalysisError error in errorReporter.getErrors()) {
 
-            String message = _encode(error.getMessage());
-            Map<String, String> metaData = error.getMetaData();
+			String message = _encode(error.getMessage());
+			Map<String, String> metaData = error.getMetaData();
 
-            String details = "";
+			String details = "";
 
-            if (error.getUserMessage() != null) {
-                details += _encode(error.getUserMessage() + "\n");
-            }
+			if (error.getUserMessage() != null) {
+				details += _encode(error.getUserMessage() + "\n");
+			}
 
-            for (String data in metaData.keys) {
-                details += _encode(data + "=" + metaData[data] + "\n");
-            }
+			for (String data in metaData.keys) {
+				details += _encode(data + "=" + metaData[data] + "\n");
+			}
 
-            xml += "\t<testcase classname=\"Planemo\" name=\"$message\">\n";
-            xml += "\t\t<failure>$details</failure>\n";
-            xml += "\t</testcase>\n";
+			xml += "\t<testcase classname=\"Planemo\" name=\"$message\">\n";
+			xml += "\t\t<failure>$details</failure>\n";
+			xml += "\t</testcase>\n";
 
-        }
+		}
 
-        xml += "</testsuite>";
+		xml += "</testsuite>";
 
-        // Save the file
-        verbose("Writing JUnit test report to \"$_resultsFile\".");
-        new File(_resultsFile).writeAsStringSync(xml);
+		// Save the file
+		verbose("Writing JUnit test report to \"$_resultsFile\".");
+		new File(_resultsFile).writeAsStringSync(xml);
 
-    }
+	}
 
-    _encode(String s) {
-        return _htmlEscaper.convert(s);
-    }
+	_encode(String s) {
+		return _htmlEscaper.convert(s);
+	}
 
 }

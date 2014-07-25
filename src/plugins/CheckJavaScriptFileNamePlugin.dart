@@ -28,14 +28,14 @@ import "../services/DataEventService.dart";
 
 class CheckJavaScriptFileNamePlugin extends AbstractCheckFileNamePlugin implements OnJavaScriptFileFoundObserverInterface {
 
-    CheckJavaScriptFileNamePlugin(String pattern, { String userMessage}): super(pattern, userMessage);
+	CheckJavaScriptFileNamePlugin(String pattern, { String userMessage}): super(pattern, userMessage);
 
-    void init(DataEventService dataEventService) {
-        dataEventService.registerOnJavaScriptFileFound(this);
-    }
+	void init(DataEventService dataEventService) {
+		dataEventService.registerOnJavaScriptFileFound(this);
+	}
 
-    void onJavaScriptFileFound(Reporters reporters, File file) {
-        checkFileName(reporters, file);
-    }
+	void onJavaScriptFileFound(Reporters reporters, File file) {
+		checkFileName(reporters, file);
+	}
 
 }

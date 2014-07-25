@@ -15,14 +15,16 @@
 * information regarding copyright ownership.
 */
 
+library Reporter;
+
 abstract class Reporter {
 
-    void start(String version);
+	void start(String version);
 
-    void verbose(String message);
+	void verbose(String message);
 
-    void error(StaticCodeAnalysisError error);
+	void error(StaticCodeAnalysisError error);
 
-    void done(ErrorReporter errorReporter, int executionDuration);
+	void done(ErrorReporter errorReporter, int executionDuration);
 
 }

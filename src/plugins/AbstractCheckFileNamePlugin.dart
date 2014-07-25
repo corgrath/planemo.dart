@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library AbstractCheckFileNamePlugin;
+
 import "dart:io";
 import "package:path/path.dart" as path;
 
@@ -27,28 +29,28 @@ import "../error/StaticCodeAnalysisError.dart";
 
 abstract class AbstractCheckFileNamePlugin extends AbstractPlugin {
 
-    String pattern;
+	String pattern;
 
-    AbstractCheckFileNamePlugin(String this.pattern, String userMessage): super(userMessage);
+	AbstractCheckFileNamePlugin(String this.pattern, String userMessage): super(userMessage);
 
-    void checkFileName(Reporters reporters, File file) {
+	void checkFileName(Reporters reporters, File file) {
 
-        String fileName = path.basename(file.path);
-        String fullPath = file.path;
+		String fileName = path.basename(file.path);
+		String fullPath = file.path;
 
-        RegExp expression = new RegExp(pattern);
-        Iterable<Match> matches = expression.allMatches(fileName);
+		RegExp expression = new RegExp(pattern);
+		Iterable<Match> matches = expression.allMatches(fileName);
 
-        if (matches.isEmpty) {
+		if (matches.isEmpty) {
 
-            StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file name \"$fileName\" is not valid as it does not comply with the pattern \"$pattern\".", userMessage);
-            error.addMetaData("filename", fileName);
-            error.addMetaData("fullpath", fullPath);
+			StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file name \"$fileName\" is not valid as it does not comply with the pattern \"$pattern\".", userMessage);
+			error.addMetaData("filename", fileName);
+			error.addMetaData("fullpath", fullPath);
 
-            reportError(error);
+			reportError(error);
 
-        }
+		}
 
-    }
+	}
 
 }

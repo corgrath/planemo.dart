@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library AbstractDataCollector;
+
 import "dart:io";
 
 import "../reporting/Reporters.dart";
@@ -22,10 +24,10 @@ import "../services/DataEventService.dart";
 
 abstract class AbstractDataCollector {
 
-    Reporters reporters;
+	Reporters reporters;
 
-    DataEventService dataEventService;
+	DataEventService dataEventService;
 
-    AbstractDataCollector(Reporters this.reporters, DataEventService this.dataEventService);
+	AbstractDataCollector(Reporters this.reporters, DataEventService this.dataEventService);
 
 }

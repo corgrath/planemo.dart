@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library CheckForEmptyFilesPlugin;
+
 import "dart:io";
 import "package:path/path.dart" as path;
 
@@ -29,43 +31,43 @@ import "../services/DataEventService.dart";
 
 class CheckForEmptyFilesPlugin extends AbstractPlugin implements OnFileFoundObserverInterface {
 
-    List<String> filesToIgnore;
+	List<String> filesToIgnore;
 
-    CheckForEmptyFilesPlugin({List<String> this.filesToIgnore, String userMessage}): super(userMessage);
+	CheckForEmptyFilesPlugin({List<String> this.filesToIgnore, String userMessage}): super(userMessage);
 
-    void init(DataEventService dataEventService) {
-        dataEventService.registerOnFileFound(this);
-    }
+	void init(DataEventService dataEventService) {
+		dataEventService.registerOnFileFound(this);
+	}
 
-    void onFileFound(Reporters reporters, File file, String fileName) {
+	void onFileFound(Reporters reporters, File file, String fileName) {
 
-        String fullPath = file.path;
+		String fullPath = file.path;
 
-        if (filesToIgnore != null) {
+		if (filesToIgnore != null) {
 
-            for (String fileToIgnore in filesToIgnore) {
+			for (String fileToIgnore in filesToIgnore) {
 
-                if (fileToIgnore == fullPath) {
-                    reporters.verbose("Ignoring to see if the file \"$fullPath\" is empty.");
-                    return;
-                }
+				if (fileToIgnore == fullPath) {
+					reporters.verbose("Ignoring to see if the file \"$fullPath\" is empty.");
+					return;
+				}
 
-            }
+			}
 
-        }
+		}
 
-        int length = file.lengthSync();
+		int length = file.lengthSync();
 
-        if (length == 0) {
+		if (length == 0) {
 
-            StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file \"$fileName\" is empty.", userMessage);
-            error.addMetaData("filename", fileName);
-            error.addMetaData("fullpath", fullPath);
+			StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file \"$fileName\" is empty.", userMessage);
+			error.addMetaData("filename", fileName);
+			error.addMetaData("fullpath", fullPath);
 
-            reportError(error);
+			reportError(error);
 
-        }
+		}
 
-    }
+	}
 
 }
