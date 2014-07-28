@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library CheckHTMLFileNamePlugin;
+
 import "dart:io";
 import "package:path/path.dart" as path;
 
@@ -28,14 +30,14 @@ import "../services/DataEventService.dart";
 
 class CheckHTMLFileNamePlugin extends AbstractCheckFileNamePlugin implements OnHTMLFileFoundObserverInterface {
 
-	CheckHTMLFileNamePlugin(String pattern, { String userMessage}): super(pattern, userMessage);
+	CheckHTMLFileNamePlugin(String pattern, {String ignoreFilesPattern:null, String userMessage}): super(pattern, ignoreFilesPattern, userMessage);
 
 	void init(DataEventService dataEventService) {
 		dataEventService.registerOnHTMLFileFound(this);
 	}
 
-	void onHTMLFileFound(Reporters reporters, File file) {
-		checkFileName(reporters, file);
+	void onHTMLFileFound(Reporters reporters, File file, String fileName) {
+		checkFileName(reporters, file, fileName);
 	}
 
 }

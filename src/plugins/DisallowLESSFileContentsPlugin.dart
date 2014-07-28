@@ -15,12 +15,12 @@
 * information regarding copyright ownership.
 */
 
-library CheckJavaScriptFileNamePlugin;
+library DisallowLESSFileContentsPlugin;
 
 import "dart:io";
-import "package:path/path.dart" as path;
 
-import "AbstractCheckFileNamePlugin.dart";
+import "AbstractPlugin.dart";
+import "AbstractDisallowFileContentsPlugin.dart";
 import "../error/StaticCodeAnalysisError.dart";
 import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
@@ -28,16 +28,16 @@ import "../reporting/ErrorReporter.dart";
 import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
 
-class CheckJavaScriptFileNamePlugin extends AbstractCheckFileNamePlugin implements OnJavaScriptFileFoundObserverInterface {
+class DisallowLESSFileContentsPlugin extends AbstractDisallowFileContentsPlugin implements OnLESSFileReadObserver {
 
-	CheckJavaScriptFileNamePlugin(String pattern, {String ignoreFilesPattern:null, String userMessage}): super(pattern, ignoreFilesPattern, userMessage);
+	DisallowLESSFileContentsPlugin(String disallowContentPattern, {String matchingFilesPattern:null, String ignoreFilesPattern:null, String userMessage:null}): super(disallowContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern:ignoreFilesPattern, userMessage:userMessage);
 
 	void init(DataEventService dataEventService) {
-		dataEventService.registerOnJavaScriptFileFound(this);
+		dataEventService.registerOnLESSFileReadObserver(this);
 	}
 
-	void onJavaScriptFileFound(Reporters reporters, File file, String fileName) {
-		checkFileName(reporters, file, fileName);
+	void onLESSFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
+		checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
 	}
 
 }

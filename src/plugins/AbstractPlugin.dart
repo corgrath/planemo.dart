@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library AbstractPlugin;
+
 import "../reporting/Reporters.dart";
 import "../reporting/ErrorReporter.dart";
 import "../error/StaticCodeAnalysisError.dart";

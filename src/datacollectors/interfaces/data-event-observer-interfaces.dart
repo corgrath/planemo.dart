@@ -34,17 +34,21 @@ abstract class OnFileFoundObserverInterface implements ObserverInterface {
 }
 
 abstract class OnJavaScriptFileFoundObserverInterface implements ObserverInterface {
-	onJavaScriptFileFound(Reporters reporters, File file);
+	onJavaScriptFileFound(Reporters reporters, File file, String fileName);
 }
 
 abstract class OnHTMLFileFoundObserverInterface implements ObserverInterface {
-	onHTMLFileFound(Reporters reporters, File file);
+	onHTMLFileFound(Reporters reporters, File file, String fileName);
 }
 
 abstract class OnLESSFileFoundObserverInterface implements ObserverInterface {
-	onLESSFileFound(Reporters reporters, File file);
+	onLESSFileFound(Reporters reporters, File file, String fileName);
 }
 
-abstract class OnFileReadObserver implements ObserverInterface {
-	onFileRead(Reporters reporters, File file, String fileName, String fileContents);
+abstract class OnJavaScriptFileReadObserver implements ObserverInterface {
+	onJavaScriptFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentsRows);
+}
+
+abstract class OnLESSFileReadObserver implements ObserverInterface {
+	onLESSFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentsRows);
 }

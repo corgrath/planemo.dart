@@ -38,38 +38,36 @@ class FileFoundDataCollector extends AbstractDataCollector implements OnFileFoun
 		reporters.verbose("Evaluating the file \"$file\".");
 
 		if (!file.existsSync()) {
+
 			throw new Exception("The file \"$file\" does not exist.");
+
+		} else if (isJavaScriptFile(file)) {
+
+			dataEventService.javaScriptFileFound(file, fileName);
+			_FileReadResults results = readFile(file);
+			dataEventService.onJavaScriptFileRead(file, fileName, results.contents, results.contentRows);
+
+		} else if (isLESSFile(file)) {
+
+			dataEventService.LESSFileFound(file, fileName);
+			_FileReadResults results = readFile(file);
+			dataEventService.onLESSFileRead(file, fileName, results.contents, results.contentRows);
+
+		} else if (isHTMLFile(file)) {
+
+			dataEventService.HTMLFileFound(file, fileName);
+
 		}
 
-		if (isJavaScriptFile(file)) {
-			dataEventService.javaScriptFileFound(file);
-		}
+	}
 
-		if (isHTMLFile(file)) {
-			dataEventService.HTMLFileFound(file);
-		}
-//		if (file.path.endsWith(".spec.js")) {
-//
-//			print(file.path);
-//			print(_configuration.readFilePattern);
-//
-//			print(file.path.contains(regexp));
-//
-//		}
+	_FileReadResults readFile(File file) {
 
-		if (_configuration.readFilePattern != null) {
+		reporters.verbose("Reading file \"${file.path}\".");
 
-			RegExp regexp = new RegExp(_configuration.readFilePattern);
+		String contents = file.readAsStringSync();
 
-			if (file.path.contains(regexp)) {
-
-				reporters.verbose("Reading file \"${file}\".");
-
-				String contents = file.readAsStringSync();
-				dataEventService.onFileRead(file, fileName, contents);
-
-			}
-		}
+		return new _FileReadResults(contents);
 
 	}
 
@@ -79,6 +77,22 @@ class FileFoundDataCollector extends AbstractDataCollector implements OnFileFoun
 
 	bool isHTMLFile(File file) {
 		return file.path.toLowerCase().endsWith(".html");
+	}
+
+	bool isLESSFile(File file) {
+		return file.path.toLowerCase().endsWith(".less");
+	}
+
+}
+
+class _FileReadResults {
+
+	final String contents;
+
+	_FileReadResults(String this.contents);
+
+	List<String> get contentRows {
+		return contents.split("\n");
 	}
 
 }

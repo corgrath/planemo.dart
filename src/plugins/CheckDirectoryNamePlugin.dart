@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library CheckDirectoryNamePlugin;
+
 import "dart:io";
 import "package:path/path.dart" as path;
 

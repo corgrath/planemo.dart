@@ -29,23 +29,30 @@ import "../error/StaticCodeAnalysisError.dart";
 
 abstract class AbstractCheckFileNamePlugin extends AbstractPlugin {
 
-	String pattern;
+	final String pattern;
+	final String ignoreFilesPattern;
 
-	AbstractCheckFileNamePlugin(String this.pattern, String userMessage): super(userMessage);
+	AbstractCheckFileNamePlugin(String this.pattern, String this.ignoreFilesPattern, String userMessage): super(userMessage);
 
-	void checkFileName(Reporters reporters, File file) {
+	void checkFileName(Reporters reporters, File file, String fileName) {
 
-		String fileName = path.basename(file.path);
-		String fullPath = file.path;
+		if (ignoreFilesPattern != null) {
+
+			RegExp regexpIgnoreFilesPattern = new RegExp(ignoreFilesPattern);
+
+			if (file.path.contains(regexpIgnoreFilesPattern)) {
+				return;
+			}
+
+		}
 
 		RegExp expression = new RegExp(pattern);
-		Iterable<Match> matches = expression.allMatches(fileName);
 
-		if (matches.isEmpty) {
+		if (!fileName.contains(expression)) {
 
 			StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file name \"$fileName\" is not valid as it does not comply with the pattern \"$pattern\".", userMessage);
 			error.addMetaData("filename", fileName);
-			error.addMetaData("fullpath", fullPath);
+			error.addMetaData("file", file.path);
 
 			reportError(error);
 

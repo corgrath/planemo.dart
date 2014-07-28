@@ -15,6 +15,8 @@
 * information regarding copyright ownership.
 */
 
+library CheckLESSFileNamePlugin;
+
 import "dart:io";
 import "package:path/path.dart" as path;
 
@@ -28,14 +30,14 @@ import "../services/DataEventService.dart";
 
 class CheckLESSFileNamePlugin extends AbstractCheckFileNamePlugin implements OnLESSFileFoundObserverInterface {
 
-	CheckLESSFileNamePlugin(String pattern, {String userMessage}): super(pattern, userMessage);
+	CheckLESSFileNamePlugin(String pattern, {String ignoreFilesPattern:null, String userMessage}): super(pattern, ignoreFilesPattern, userMessage);
 
 	void init(DataEventService dataEventService) {
 		dataEventService.registerOnLESSFileFound(this);
 	}
 
-	void onLESSFileFound(Reporters reporters, File file) {
-		checkFileName(reporters, file);
+	void onLESSFileFound(Reporters reporters, File file, String fileName) {
+		checkFileName(reporters, file, fileName);
 	}
 
 }

@@ -30,7 +30,8 @@ class DataEventService {
 	ObserverList<OnJavaScriptFileFoundObserverInterface> onJavaScriptFileFoundObservers;
 	ObserverList<OnHTMLFileFoundObserverInterface> onHTMLFileFoundObservers;
 	ObserverList<OnLESSFileFoundObserverInterface> onLESSFileFoundObservers;
-	ObserverList<OnFileReadObserver> _onFileReadObservers;
+	ObserverList<OnJavaScriptFileReadObserver> _onJavaScriptFileReadObservers;
+	ObserverList<OnLESSFileReadObserver> _onLESSFileReadObservers;
 
 	final Reporters _reporters;
 	final ErrorReporter errorReporter;
@@ -41,7 +42,8 @@ class DataEventService {
 		onJavaScriptFileFoundObservers = new ObserverList();
 		onHTMLFileFoundObservers = new ObserverList();
 		onLESSFileFoundObservers = new ObserverList<OnLESSFileFoundObserverInterface>();
-		_onFileReadObservers = new ObserverList<OnFileReadObserver>();
+		_onJavaScriptFileReadObservers = new ObserverList<OnJavaScriptFileReadObserver>();
+		_onLESSFileReadObservers = new ObserverList<OnLESSFileReadObserver>();
 	}
 
 	void registerOnDirectoryFound(OnDirectoryFoundObserverInterface observer) {
@@ -64,32 +66,40 @@ class DataEventService {
 		onJavaScriptFileFoundObservers.add(observer);
 	}
 
-	void javaScriptFileFound(File file) {
-		onJavaScriptFileFoundObservers.getAll().forEach((observer) => observer.onJavaScriptFileFound(_reporters, file));
+	void javaScriptFileFound(File file, String fileName) {
+		onJavaScriptFileFoundObservers.getAll().forEach((observer) => observer.onJavaScriptFileFound(_reporters, file, fileName));
 	}
 
 	void registerOnHTMLFileFound(OnHTMLFileFoundObserverInterface observer) {
 		onHTMLFileFoundObservers.add(observer);
 	}
 
-	void HTMLFileFound(File file) {
-		onHTMLFileFoundObservers.getAll().forEach((observer) => observer.onHTMLFileFound(_reporters, file));
+	void HTMLFileFound(File file, String fileName) {
+		onHTMLFileFoundObservers.getAll().forEach((observer) => observer.onHTMLFileFound(_reporters, file, fileName));
 	}
 
 	void registerOnLESSFileFound(OnLESSFileFoundObserverInterface observer) {
 		onLESSFileFoundObservers.add(observer);
 	}
 
-	void LESSFileFound(File file) {
-		onLESSFileFoundObservers.getAll().forEach((observer) => observer.onLESSFileFound(_reporters, file));
+	void LESSFileFound(File file, String fileName) {
+		onLESSFileFoundObservers.getAll().forEach((observer) => observer.onLESSFileFound(_reporters, file, fileName));
 	}
 
-	void registerOnFileReadObserver(OnFileReadObserver observer) {
-		_onFileReadObservers.add(observer);
+	void registerOnJavaScriptFileReadObserver(OnJavaScriptFileReadObserver observer) {
+		_onJavaScriptFileReadObservers.add(observer);
 	}
 
-	void onFileRead(File file, String fileName, String fileContents) {
-		_onFileReadObservers.getAll().forEach((observer) => observer.onFileRead(_reporters, file, fileName, fileContents));
+	void onJavaScriptFileRead(File file, String fileName, String fileContents, List<String> fileContentsRows) {
+		_onJavaScriptFileReadObservers.getAll().forEach((observer) => observer.onJavaScriptFileRead(_reporters, file, fileName, fileContents, fileContentsRows));
+	}
+
+	void registerOnLESSFileReadObserver(OnLESSFileReadObserver observer) {
+		_onLESSFileReadObservers.add(observer);
+	}
+
+	void onLESSFileRead(File file, String fileName, String fileContents, List<String> fileContentsRows) {
+		_onLESSFileReadObservers.getAll().forEach((observer) => observer.onLESSFileRead(_reporters, file, fileName, fileContents, fileContentsRows));
 	}
 
 }

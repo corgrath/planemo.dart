@@ -15,12 +15,12 @@
 * information regarding copyright ownership.
 */
 
-library CheckJavaScriptFileNamePlugin;
+library EnforceJavaScriptFileContentsPlugin;
 
 import "dart:io";
-import "package:path/path.dart" as path;
 
-import "AbstractCheckFileNamePlugin.dart";
+import "AbstractPlugin.dart";
+import "AbstractEnforceFileContentsPlugin.dart";
 import "../error/StaticCodeAnalysisError.dart";
 import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
@@ -28,16 +28,16 @@ import "../reporting/ErrorReporter.dart";
 import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
 
-class CheckJavaScriptFileNamePlugin extends AbstractCheckFileNamePlugin implements OnJavaScriptFileFoundObserverInterface {
+class EnforceJavaScriptFileContentsPlugin extends AbstractEnforceFileContentsPlugin implements OnJavaScriptFileReadObserver {
 
-	CheckJavaScriptFileNamePlugin(String pattern, {String ignoreFilesPattern:null, String userMessage}): super(pattern, ignoreFilesPattern, userMessage);
+	EnforceJavaScriptFileContentsPlugin(String enforceContentPattern, {String matchingFilesPattern:null, String ignoreFilesPattern:null, String userMessage:null}): super(enforceContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern:ignoreFilesPattern, userMessage:userMessage);
 
 	void init(DataEventService dataEventService) {
-		dataEventService.registerOnJavaScriptFileFound(this);
+		dataEventService.registerOnJavaScriptFileReadObserver(this);
 	}
 
-	void onJavaScriptFileFound(Reporters reporters, File file, String fileName) {
-		checkFileName(reporters, file, fileName);
+	void onJavaScriptFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
+		checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
 	}
 
 }

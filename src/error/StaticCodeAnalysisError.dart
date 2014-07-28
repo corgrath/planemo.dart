@@ -19,14 +19,13 @@ library StaticCodeAnalysisError;
 
 class StaticCodeAnalysisError {
 
-	String _message;
+	final String _message;
+	final String _userMessage;
 
-	String _userMessage;
-
-	Map<String, String> _metaData;
+	Map<String, Object> _metaData;
 
 	StaticCodeAnalysisError(String this._message, String this._userMessage) {
-		_metaData = new Map<String, String>();
+		_metaData = new Map<String, Object>();
 	}
 
 	String getMessage() {
@@ -37,7 +36,7 @@ class StaticCodeAnalysisError {
 		return _userMessage;
 	}
 
-	void addMetaData(String name, String value) {
+	void addMetaData(String name, Object value) {
 		_metaData[name] = value;
 	}
 

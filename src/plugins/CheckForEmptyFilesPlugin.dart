@@ -41,14 +41,12 @@ class CheckForEmptyFilesPlugin extends AbstractPlugin implements OnFileFoundObse
 
 	void onFileFound(Reporters reporters, File file, String fileName) {
 
-		String fullPath = file.path;
-
 		if (filesToIgnore != null) {
 
 			for (String fileToIgnore in filesToIgnore) {
 
-				if (fileToIgnore == fullPath) {
-					reporters.verbose("Ignoring to see if the file \"$fullPath\" is empty.");
+				if (fileToIgnore == file.path) {
+					reporters.verbose("Ignoring to see if the file \"${file.path}\" is empty.");
 					return;
 				}
 
@@ -62,7 +60,7 @@ class CheckForEmptyFilesPlugin extends AbstractPlugin implements OnFileFoundObse
 
 			StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file \"$fileName\" is empty.", userMessage);
 			error.addMetaData("filename", fileName);
-			error.addMetaData("fullpath", fullPath);
+			error.addMetaData("file", file.path);
 
 			reportError(error);
 
