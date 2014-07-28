@@ -25,7 +25,6 @@ class PlanemoConfiguration {
 	List<String> _directoriesToIgnore;
 	List<AbstractPlugin> _plugins;
 	List<Reporter> _reporters;
-	String readFilePattern;
 
 	PlanemoConfiguration(List<Reporter> this._reporters) {
 		_directoriesToIgnore = new List<String>();

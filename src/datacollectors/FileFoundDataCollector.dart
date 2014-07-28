@@ -56,6 +56,8 @@ class FileFoundDataCollector extends AbstractDataCollector implements OnFileFoun
 		} else if (isHTMLFile(file)) {
 
 			dataEventService.HTMLFileFound(file, fileName);
+			_FileReadResults results = readFile(file);
+			dataEventService.onHTMLFileRead(file, fileName, results.contents, results.contentRows);
 
 		}
 

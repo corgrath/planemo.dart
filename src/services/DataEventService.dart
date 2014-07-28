@@ -32,6 +32,7 @@ class DataEventService {
 	ObserverList<OnLESSFileFoundObserverInterface> onLESSFileFoundObservers;
 	ObserverList<OnJavaScriptFileReadObserver> _onJavaScriptFileReadObservers;
 	ObserverList<OnLESSFileReadObserver> _onLESSFileReadObservers;
+	ObserverList<OnHTMLFileReadObserver> _onHTMLFileReadObservers;
 
 	final Reporters _reporters;
 	final ErrorReporter errorReporter;
@@ -44,6 +45,7 @@ class DataEventService {
 		onLESSFileFoundObservers = new ObserverList<OnLESSFileFoundObserverInterface>();
 		_onJavaScriptFileReadObservers = new ObserverList<OnJavaScriptFileReadObserver>();
 		_onLESSFileReadObservers = new ObserverList<OnLESSFileReadObserver>();
+		_onHTMLFileReadObservers = new ObserverList<OnHTMLFileReadObserver>();
 	}
 
 	void registerOnDirectoryFound(OnDirectoryFoundObserverInterface observer) {
@@ -100,6 +102,14 @@ class DataEventService {
 
 	void onLESSFileRead(File file, String fileName, String fileContents, List<String> fileContentsRows) {
 		_onLESSFileReadObservers.getAll().forEach((observer) => observer.onLESSFileRead(_reporters, file, fileName, fileContents, fileContentsRows));
+	}
+
+	void registerOnHTMLFileReadObserver(OnHTMLFileReadObserver observer) {
+		_onHTMLFileReadObservers.add(observer);
+	}
+
+	void onHTMLFileRead(File file, String fileName, String fileContents, List<String> fileContentsRows) {
+		_onHTMLFileReadObservers.getAll().forEach((observer) => observer.onHTMLFileRead(_reporters, file, fileName, fileContents, fileContentsRows));
 	}
 
 }

@@ -52,3 +52,7 @@ abstract class OnJavaScriptFileReadObserver implements ObserverInterface {
 abstract class OnLESSFileReadObserver implements ObserverInterface {
 	onLESSFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentsRows);
 }
+
+abstract class OnHTMLFileReadObserver implements ObserverInterface {
+	onHTMLFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentsRows);
+}
