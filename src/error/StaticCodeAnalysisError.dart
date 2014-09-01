@@ -15,7 +15,22 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src\error\StaticCodeAnalysisError.dart
+ */
+
 library StaticCodeAnalysisError;
+
+/**
+ * Class: StaticCodeAnalysisError
+ *
+ * 		An error from thrown from a plugin.
+ *
+ * 	Arguments:
+ *
+ * 		_message - The error message
+ * 		_userMessage - A custom message to the user
+ */
 
 class StaticCodeAnalysisError {
 
@@ -28,13 +43,44 @@ class StaticCodeAnalysisError {
 		_metaData = new Map<String, Object>();
 	}
 
+	/**
+	 * Method: getMessage
+	 *
+	 * 		Returns the message.
+	 *
+	 * 	Returns:
+	 *
+	 * 		The message.
+	 */
+
 	String getMessage() {
 		return _message;
 	}
 
+	/**
+	 * Method: getUserMessage
+	 *
+	 * 		Returns the user message.
+	 *
+	 * 	Returns:
+	 *
+	 * 		The user message.
+	 */
+
 	String getUserMessage() {
 		return _userMessage;
 	}
+
+	/**
+	 * Method: addMetaData
+	 *
+	 * 		Add meta information to the error.
+	 *
+	 * 	Arguments:
+	 *
+	 * 		name - Name of the meta data
+	 * 		value - The value of the meta data
+	 */
 
 	void addMetaData(String name, Object value) {
 		_metaData[name] = value;

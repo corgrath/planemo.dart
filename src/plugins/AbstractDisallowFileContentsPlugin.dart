@@ -15,6 +15,10 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src/plugins/AbstractDisallowFileContentsPlugin.dart
+ */
+
 library AbstractDisallowFileContentsPlugin;
 
 import "dart:io";

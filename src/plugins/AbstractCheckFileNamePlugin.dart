@@ -15,6 +15,10 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src\plugins\AbstractCheckFileNamePlugin.dart
+ */
+
 library AbstractCheckFileNamePlugin;
 
 import "dart:io";
@@ -26,6 +30,16 @@ import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
 import "../reporting/ErrorReporter.dart";
 import "../error/StaticCodeAnalysisError.dart";
+
+/**
+ * Class: AbstractCheckFileNamePlugin
+ *
+ * 		Abstract class for checking file names.
+ *
+ * Arguments:
+ *
+ * 		pattern - RegExp string pattern that the file names need to follow.
+ */
 
 abstract class AbstractCheckFileNamePlugin extends AbstractPlugin {
 

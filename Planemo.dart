@@ -15,6 +15,10 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: Planemo.dart
+ */
+
 library Planemo;
 
 import "dart:io";
@@ -29,7 +33,23 @@ import "src/datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "src/plugins/AbstractPlugin.dart";
 import "src/core/ObserverList.dart";
 
+/**
+ * Variable: VERSION
+ *
+ * 		Holds the current Planemo version.
+ */
+
 final String VERSION = "0.2";
+
+/**
+ * Class: Planemo
+ *
+ * 		This is the main class that triggers the Planemo analysis.
+ *
+ * Arguments:
+ *
+ * 		configuration - <PlanemoConfiguration>
+ */
 
 class Planemo {
 

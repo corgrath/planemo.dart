@@ -1,0 +1,2025 @@
+Crash Message:
+
+   The first content line in /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/output_project/Menu.txt must be the Format: line.
+
+Natural Docs version 1.52
+Perl version 5.8.8 on msys
+
+Command Line:
+
+   -i /c/christoffer/git_repos/planemo_dart/ -o HTML output -p output_project -s Default main --rebuild
+
+Stack Trace:
+
+   NaturalDocs::Error::CatchDeath, called from
+   (eval), line 52 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 52 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   main::BEGIN, line 25 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   (eval), line 0 of Encode/ConfigLocal.pm, called from
+   (eval), line 0 of Encode/ConfigLocal.pm, called from
+   main::BEGIN, line 66 of NaturalDocs, called from
+   (eval), line 0 of Encode/ConfigLocal.pm   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   Encode::decode, line 166 of /usr/lib/perl5/5.8.8/msys/Encode.pm, called from
+   (eval), line 100 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/LineReader.pm, called from
+   NaturalDocs::LineReader::New, line 100, called from
+   (eval), line 1411 of /c/Users/cpe.QTSEL/Desktop/NaturalDocs-1.52/Modules/NaturalDocs/Languages.pm, called from
+   NaturalDocs::Languages::LanguageOf, line 1410, called from
+   NaturalDocs::Project::GetAllSupportedFiles, line 1250, called from
+   NaturalDocs::Project::LoadSourceFileInfo, line 324, called from
+   (eval), line 294 of NaturalDocs   NaturalDocs::Error::CatchDeath, called from
+   NaturalDocs::ConfigFile::Open, line 173, called from
+   NaturalDocs::Menu::LoadMenuFile, line 685, called from
+   NaturalDocs::Menu::LoadAndUpdate, line 388, called from
+   (eval), line 334 of NaturalDocs

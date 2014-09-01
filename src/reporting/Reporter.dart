@@ -15,13 +15,56 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src/reporting/Reporter.dart
+ */
+
 library Reporter;
+
+import "ErrorReporter.dart";
+import "../error/StaticCodeAnalysisError.dart";
+
+/**
+ * Interface: Reporter
+ *
+ * 		Interface for a reporter.
+ */
 
 abstract class Reporter {
 
+	/**
+	 * Method: start
+	 *
+	 *		Called when Planemo is started.
+	 *
+	 * Arguments:
+	 *
+	 * 		version - The Planemo version number.
+	 */
+
 	void start(String version);
 
+	/**
+	 * Method: verbose
+	 *
+	 *		Called when different verbose stuff happens.
+	 *
+	 * Arguments:
+	 *
+	 * 		message - The message that is classified as verbose.
+	 */
+
 	void verbose(String message);
+
+	/**
+	 * Method: error
+	 *
+	 *		Called when a plugin throws an error.
+	 *
+	 * Arguments:
+	 *
+	 * 		<StaticCodeAnalysisError> message - A <StaticCodeAnalysisError> error.
+	 */
 
 	void error(StaticCodeAnalysisError error);
 

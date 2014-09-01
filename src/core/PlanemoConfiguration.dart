@@ -15,9 +15,18 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src/core/PlanemoConfiguration.dart
+ */
+
 import "../plugins/AbstractPlugin.dart";
 import "../reporting/Reporter.dart";
 import "../reporting/DefaultReporter.dart";
+
+/**
+ * Class: PlanemoConfiguration
+ * This is the configuration settings for running Planemo.
+ */
 
 class PlanemoConfiguration {
 
@@ -43,13 +52,38 @@ class PlanemoConfiguration {
 		_plugins.add(plugin);
 	}
 
+	/**
+	 * Method: getPlugins
+	 *
+	 *		Returns a list of <AbstractPlugin>s.
+	 *
+	 * Returns:
+	 *
+	 *		A list of <AbstractPlugin>s.
+	 */
+
 	List<AbstractPlugin> getPlugins() {
 		return _plugins;
 	}
 
+	/**
+	 * Method: getReporters
+	 *
+	 *		Returns a list of <Reporter>s.
+	 *
+	 * Returns:
+	 *
+	 *		A list of <Reporter>s.
+	 */
+
 	List<Reporter> getReporters() {
 		return _reporters;
 	}
+
+	/**
+	 * Method: validate
+	 * Performs basic validation of the configuration settings.
+	 */
 
 	void validate() {
 

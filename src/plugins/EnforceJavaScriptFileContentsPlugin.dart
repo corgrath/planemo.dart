@@ -15,6 +15,10 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src/plugins/EnforceJavaScriptFileContentsPlugin.dart
+ */
+
 library EnforceJavaScriptFileContentsPlugin;
 
 import "dart:io";
@@ -27,6 +31,22 @@ import "../reporting/Reporters.dart";
 import "../reporting/ErrorReporter.dart";
 import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
+
+/**
+ * Class: EnforceJavaScriptFileContentsPlugin
+ *
+ * 		Extends: <AbstractEnforceFileContentsPlugin>
+ * 		Implements: <OnJavaScriptFileReadObserver>
+ *
+ * 		Enforces that a JavaScript file contains a specific pattern.
+ *
+ * Arguments:
+ *
+ * 		enforceContentPattern - A RegExp pattern
+ * 		matchingFilesPattern - The JavaScript file needs to follow this pattern in order to be evaluated.
+ * 		userMessage - Custom user message
+ *
+ */
 
 class EnforceJavaScriptFileContentsPlugin extends AbstractEnforceFileContentsPlugin implements OnJavaScriptFileReadObserver {
 

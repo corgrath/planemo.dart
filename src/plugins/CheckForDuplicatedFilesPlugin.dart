@@ -15,6 +15,10 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src/plugins/CheckForDuplicatedFilesPlugin.dart
+ */
+
 library CheckForDuplicatedFilesPlugin;
 
 import "dart:io";
@@ -29,6 +33,11 @@ import "../reporting/Reporters.dart";
 import "../reporting/ErrorReporter.dart";
 import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
+
+/**
+ * Class: CheckForDuplicatedFilesPlugin
+ * Plugin that checks for duplicated files.
+ */
 
 class CheckForDuplicatedFilesPlugin extends AbstractPlugin implements OnFileFoundObserverInterface {
 
@@ -67,7 +76,8 @@ class CheckForDuplicatedFilesPlugin extends AbstractPlugin implements OnFileFoun
 
 				StaticCodeAnalysisError error = new StaticCodeAnalysisError("Found duplicated file \"$fileName\".", userMessage);
 				error.addMetaData("filename", fileName);
-				error.addMetaData("fullpath", file.path);
+				error.addMetaData("file1", file.path);
+				error.addMetaData("file2", data.file.path);
 				error.addMetaData("checksum", checksum);
 
 				reportError(error);
@@ -80,7 +90,7 @@ class CheckForDuplicatedFilesPlugin extends AbstractPlugin implements OnFileFoun
          * Add the file data
          */
 
-		FileData data = new FileData(fileName, checksum);
+		FileData data = new FileData(fileName, checksum, file);
 		checksums.add(data);
 
 	}
@@ -89,10 +99,10 @@ class CheckForDuplicatedFilesPlugin extends AbstractPlugin implements OnFileFoun
 
 class FileData {
 
-	String fileName;
+	final String fileName;
+	final String checksum;
+	final File file;
 
-	String checksum;
-
-	FileData(String this.fileName, String this.checksum);
+	FileData(String this.fileName, String this.checksum, File this.file);
 
 }

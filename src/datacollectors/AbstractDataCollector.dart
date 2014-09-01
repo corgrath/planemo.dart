@@ -15,12 +15,22 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src\datacollectors\AbstractDataCollector.dart
+ */
+
 library AbstractDataCollector;
 
 import "dart:io";
 
 import "../reporting/Reporters.dart";
 import "../services/DataEventService.dart";
+
+/**
+ * Interface: AbstractDataCollector
+ *
+ * Interface for a data collector.
+ */
 
 abstract class AbstractDataCollector {
 

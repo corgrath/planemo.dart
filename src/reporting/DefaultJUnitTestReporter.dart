@@ -72,11 +72,11 @@ class DefaultJUnitTestReporter implements Reporter {
 			String details = "";
 
 			if (error.getUserMessage() != null) {
-				details += _encode(error.getUserMessage() + "\n");
+				details += _encode("${error.getUserMessage()}\n");
 			}
 
 			for (String data in metaData.keys) {
-				details += _encode(data + "=" + metaData[data] + "\n");
+				details += _encode("${data}=${metaData[data]}\n");
 			}
 
 			xml += "\t<testcase classname=\"Planemo\" name=\"$message\">\n";

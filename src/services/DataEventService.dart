@@ -15,6 +15,10 @@
 * information regarding copyright ownership.
 */
 
+/**
+ * File: src/services/DataEventService.dart
+ */
+
 library DataEventService;
 
 import "dart:io";
@@ -22,6 +26,18 @@ import "../core/ObserverList.dart";
 import "../reporting/Reporters.dart";
 import "../reporting/ErrorReporter.dart";
 import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
+
+/**
+ * Class: DataEventService
+ *
+ * 		Service that handles all the data events.
+ *
+ * Arguments:
+ *
+ * 		_reporters - <Reporters>
+ * 		errorReporter - <ErrorReporter>
+ *
+ */
 
 class DataEventService {
 

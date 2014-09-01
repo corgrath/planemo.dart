@@ -1,0 +1,80 @@
+Format: 1.52
+
+
+# You can add a title and sub-title to your menu like this:
+# Title: [project name]
+# SubTitle: [subtitle]
+
+# You can add a footer to your documentation like this:
+# Footer: [text]
+# If you want to add a copyright notice, this would be the place to do it.
+
+# You can add a timestamp to your documentation like one of these:
+# Timestamp: Generated on month day, year
+# Timestamp: Updated mm/dd/yyyy
+# Timestamp: Last updated mon day
+#
+#   m     - One or two digit month.  January is "1"
+#   mm    - Always two digit month.  January is "01"
+#   mon   - Short month word.  January is "Jan"
+#   month - Long month word.  January is "January"
+#   d     - One or two digit day.  1 is "1"
+#   dd    - Always two digit day.  1 is "01"
+#   day   - Day with letter extension.  1 is "1st"
+#   yy    - Two digit year.  2006 is "06"
+#   yyyy  - Four digit year.  2006 is "2006"
+#   year  - Four digit year.  2006 is "2006"
+
+
+# --------------------------------------------------------------------------
+# 
+# Cut and paste the lines below to change the order in which your files
+# appear on the menu.  Don't worry about adding or removing files, Natural
+# Docs will take care of that.
+# 
+# You can further organize the menu by grouping the entries.  Add a
+# "Group: [name] {" line to start a group, and add a "}" to end it.
+# 
+# You can add text and web links to the menu by adding "Text: [text]" and
+# "Link: [name] ([URL])" lines, respectively.
+# 
+# The formatting and comments are auto-generated, so don't worry about
+# neatness when editing the file.  Natural Docs will clean it up the next
+# time it is run.  When working with groups, just deal with the braces and
+# forget about the indentation and comments.
+# 
+# --------------------------------------------------------------------------
+
+
+File: Planemo.dart  (Planemo.dart)
+
+Group: Src  {
+
+   File: src/core/PlanemoConfiguration.dart  (src/core/PlanemoConfiguration.dart)
+   File: src/services/DataEventService.dart  (src/services/DataEventService.dart)
+   File: src\error\StaticCodeAnalysisError.dart  (src/error/StaticCodeAnalysisError.dart)
+   File: src/reporting/Reporter.dart  (src/reporting/Reporter.dart)
+
+   Group: Plugins  {
+
+      File: src/plugins/AbstractDisallowFileContentsPlugin.dart  (src/plugins/AbstractDisallowFileContentsPlugin.dart)
+      File: src/plugins/AbstractPlugin.dart  (src/plugins/AbstractPlugin.dart)
+      File: src/plugins/CheckForDuplicatedFilesPlugin.dart  (src/plugins/CheckForDuplicatedFilesPlugin.dart)
+      File: src/plugins/EnforceJavaScriptFileContentsPlugin.dart  (src/plugins/EnforceJavaScriptFileContentsPlugin.dart)
+      File: src\plugins\AbstractCheckFileNamePlugin.dart  (src/plugins/AbstractCheckFileNamePlugin.dart)
+      }  # Group: Plugins
+
+   }  # Group: Src
+
+File: src\datacollectors\AbstractDataCollector.dart  (src/datacollectors/AbstractDataCollector.dart)
+
+Group: Index  {
+
+   Index: Everything
+   Class Index: Classes
+   Function Index: Functions
+   File Index: Files
+   Variable Index: Variables
+   Interface Index: Interfaces
+   }  # Group: Index
+
