@@ -1,6 +1,6 @@
 name: planemo
 author: Christoffer Pettersson <christoffer@osbcp.com>
-homepage: https://github.com/corgrath/planemo.dart
+homepage: https://github.com/corgrath/planemo.dart/
 version: 1.0.1
 description: Planemo is a plugin-friendly open source software quality platform written in Dart.
 dependencies:
