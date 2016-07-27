@@ -59,7 +59,6 @@ class CheckForDuplicatedFilesPlugin extends AbstractPlugin implements OnFileFoun
         }
 
         String checksum = md5.convert(file.readAsBytesSync()).toString();
-        print("CHIRSTOFFER $checksum");
 
         for (int i = 0; i < checksums.length; i++) {
             FileData data = checksums[i];

@@ -17,11 +17,12 @@
 
 import "dart:io";
 
-import "package:planemo.dart/Planemo.dart.dart";
+import "package:planemo/Planemo.dart";
 
 void main(List<String> arguments) {
     bool useColors = true;
     bool verbose = true;
+
 
     /*
      * Planemo configuration
@@ -36,10 +37,10 @@ void main(List<String> arguments) {
     configuration.sourceRoot = "..${Platform.pathSeparator}lib${Platform.pathSeparator}";
 
     // Directories to ignore
-    	configuration.addDirectoryToIgnore(".\\.git");
-    //	configuration.addDirectoryToIgnore(".\\.idea");
-    //	configuration.addDirectoryToIgnore(".\\packages");
-    //	configuration.addDirectoryToIgnore(".\\resources");
+    configuration.addDirectoryToIgnore(".${Platform.pathSeparator}.git${Platform.pathSeparator}");
+    configuration.addDirectoryToIgnore(".${Platform.pathSeparator}.idea${Platform.pathSeparator}");
+    configuration.addDirectoryToIgnore(".${Platform.pathSeparator}packages${Platform.pathSeparator}");
+    configuration.addDirectoryToIgnore(".${Platform.pathSeparator}resources${Platform.pathSeparator}");
 
     // Plugins to invoke
     configuration.addPlugin(new CheckDirectoryNamePlugin("^[\\.a-z|-]+\$", userMessage: "This is a custom message."));
