@@ -23,15 +23,11 @@ library CheckForDuplicatedFilesPlugin;
 
 import "dart:io";
 import "package:crypto/crypto.dart";
-import "package:path/path.dart" as path;
 
 import "AbstractPlugin.dart";
-import "AbstractCheckFileNamePlugin.dart";
 import "../error/StaticCodeAnalysisError.dart";
 import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
-import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
 
 /**
@@ -65,8 +61,8 @@ class CheckForDuplicatedFilesPlugin extends AbstractPlugin implements OnFileFoun
 
 		}
 
-		String checksum = CryptoUtils.bytesToHex((new MD5()
-			..add(file.readAsBytesSync())).close());
+		String checksum = md5.convert(file.readAsBytesSync()).toString();
+		print("CHIRSTOFFER $checksum");
 
 		for (int i = 0; i < checksums.length ;i++) {
 
