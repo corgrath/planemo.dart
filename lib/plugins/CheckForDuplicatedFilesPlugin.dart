@@ -37,68 +37,60 @@ import "../services/DataEventService.dart";
 
 class CheckForDuplicatedFilesPlugin extends AbstractPlugin implements OnFileFoundObserverInterface {
 
-	final String ignoreFilesMatchingPattern;
-	List<FileData> checksums;
+    final String ignoreFilesMatchingPattern;
+    List<FileData> checksums;
 
-	CheckForDuplicatedFilesPlugin({String this.ignoreFilesMatchingPattern:null, String userMessage}): super(userMessage) {
-		checksums = new List<FileData>();
-	}
+    CheckForDuplicatedFilesPlugin({String this.ignoreFilesMatchingPattern: null, String userMessage}) : super(userMessage) {
+        checksums = new List<FileData>();
+    }
 
-	void init(DataEventService dataEventService) {
-		dataEventService.registerOnFileFound(this);
-	}
+    void init(DataEventService dataEventService) {
+        dataEventService.registerOnFileFound(this);
+    }
 
-	void onFileFound(Reporters reporters, File file, String fileName) {
+    void onFileFound(Reporters reporters, File file, String fileName) {
+        if (ignoreFilesMatchingPattern != null) {
+            RegExp regexp = new RegExp(ignoreFilesMatchingPattern);
 
-		if (ignoreFilesMatchingPattern != null) {
+            if (fileName.contains(regexp)) {
+                reporters.verbose("Ignoring file \"${fileName}\".");
+                return;
+            }
+        }
 
-			RegExp regexp = new RegExp(ignoreFilesMatchingPattern);
+        String checksum = md5.convert(file.readAsBytesSync()).toString();
+        print("CHIRSTOFFER $checksum");
 
-			if (fileName.contains(regexp)) {
-				reporters.verbose("Ignoring file \"${fileName}\".");
-				return;
-			}
+        for (int i = 0; i < checksums.length; i++) {
+            FileData data = checksums[i];
 
-		}
+            if (data.fileName == fileName && data.checksum == checksum) {
+                StaticCodeAnalysisError error = new StaticCodeAnalysisError("Found duplicated file \"$fileName\".", userMessage);
+                error.addMetaData("filename", fileName);
+                error.addMetaData("file1", file.path);
+                error.addMetaData("file2", data.file.path);
+                error.addMetaData("checksum", checksum);
 
-		String checksum = md5.convert(file.readAsBytesSync()).toString();
-		print("CHIRSTOFFER $checksum");
+                reportError(error);
+            }
+        }
 
-		for (int i = 0; i < checksums.length ;i++) {
-
-			FileData data = checksums[i];
-
-			if (data.fileName == fileName && data.checksum == checksum) {
-
-				StaticCodeAnalysisError error = new StaticCodeAnalysisError("Found duplicated file \"$fileName\".", userMessage);
-				error.addMetaData("filename", fileName);
-				error.addMetaData("file1", file.path);
-				error.addMetaData("file2", data.file.path);
-				error.addMetaData("checksum", checksum);
-
-				reportError(error);
-
-			}
-
-		}
-
-		/*
+        /*
          * Add the file data
          */
 
-		FileData data = new FileData(fileName, checksum, file);
-		checksums.add(data);
-
-	}
+        FileData data = new FileData(fileName, checksum, file);
+        checksums.add(data);
+    }
 
 }
 
 class FileData {
 
-	final String fileName;
-	final String checksum;
-	final File file;
+    final String fileName;
+    final String checksum;
+    final File file;
 
-	FileData(String this.fileName, String this.checksum, File this.file);
+    FileData(String this.fileName, String this.checksum, File this.file);
 
 }

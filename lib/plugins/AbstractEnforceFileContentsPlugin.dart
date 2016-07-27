@@ -20,57 +20,44 @@ library AbstractDisallowFileContentsPlugin;
 import "dart:io";
 
 import "AbstractPlugin.dart";
-import "AbstractDisallowFileContentsPlugin.dart";
 import "../error/StaticCodeAnalysisError.dart";
-import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
-import "../error/StaticCodeAnalysisError.dart";
-import "../services/DataEventService.dart";
 
 abstract class AbstractEnforceFileContentsPlugin extends AbstractPlugin {
 
-	final String _enforceContentPattern;
-	final String matchingFilesPattern;
-	final String ignoreFilesPattern;
+    final String _enforceContentPattern;
+    final String matchingFilesPattern;
+    final String ignoreFilesPattern;
 
-	AbstractEnforceFileContentsPlugin(String this._enforceContentPattern, {String this.matchingFilesPattern:null, String this.ignoreFilesPattern:null, String userMessage:null}): super(userMessage);
+    AbstractEnforceFileContentsPlugin(String this._enforceContentPattern, {String this.matchingFilesPattern: null, String this.ignoreFilesPattern: null, String userMessage: null}) : super(userMessage);
 
-	void checkFileContents(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
+    void checkFileContents(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
+        if (matchingFilesPattern != null) {
+            RegExp regexpMatchingFilesPattern = new RegExp(matchingFilesPattern, caseSensitive: false);
 
-		if (matchingFilesPattern != null) {
+            if (!file.path.contains(regexpMatchingFilesPattern)) {
+                return;
+            }
+        }
 
-			RegExp regexpMatchingFilesPattern = new RegExp(matchingFilesPattern, caseSensitive:false);
+        if (ignoreFilesPattern != null) {
+            RegExp regexpIgnoreFilesPattern = new RegExp(ignoreFilesPattern, caseSensitive: false);
 
-			if (!file.path.contains(regexpMatchingFilesPattern)) {
-				return;
-			}
+            if (file.path.contains(regexpIgnoreFilesPattern)) {
+                return;
+            }
+        }
 
-		}
+        RegExp regexpDisallowContentsPattern = new RegExp(_enforceContentPattern, caseSensitive: false);
 
-		if (ignoreFilesPattern != null) {
+        if (!fileContents.contains(regexpDisallowContentsPattern)) {
+            StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file \"${fileName}\" does not contain the pattern \"${_enforceContentPattern}\".", userMessage);
+            error.addMetaData("file", file.path);
+            error.addMetaData("disallowContentsPattern", _enforceContentPattern);
+            error.addMetaData("fileMathingPattern", matchingFilesPattern);
 
-			RegExp regexpIgnoreFilesPattern = new RegExp(ignoreFilesPattern, caseSensitive:false);
-
-			if (file.path.contains(regexpIgnoreFilesPattern)) {
-				return;
-			}
-
-		}
-
-		RegExp regexpDisallowContentsPattern = new RegExp(_enforceContentPattern, caseSensitive:false);
-
-		if (!fileContents.contains(regexpDisallowContentsPattern)) {
-
-			StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file \"${fileName}\" does not contain the pattern \"${_enforceContentPattern}\".", userMessage);
-			error.addMetaData("file", file.path);
-			error.addMetaData("disallowContentsPattern", _enforceContentPattern);
-			error.addMetaData("fileMathingPattern", matchingFilesPattern);
-
-			reportError(error);
-
-		}
-
-	}
+            reportError(error);
+        }
+    }
 
 }

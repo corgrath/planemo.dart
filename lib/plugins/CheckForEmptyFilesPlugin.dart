@@ -18,54 +18,42 @@
 library CheckForEmptyFilesPlugin;
 
 import "dart:io";
-import "package:path/path.dart" as path;
 
 import "AbstractPlugin.dart";
-import "AbstractCheckFileNamePlugin.dart";
 import "../error/StaticCodeAnalysisError.dart";
 import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
-import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
 
 class CheckForEmptyFilesPlugin extends AbstractPlugin implements OnFileFoundObserverInterface {
 
-	List<String> filesToIgnore;
+    List<String> filesToIgnore;
 
-	CheckForEmptyFilesPlugin({List<String> this.filesToIgnore, String userMessage}): super(userMessage);
+    CheckForEmptyFilesPlugin({List<String> this.filesToIgnore, String userMessage}) : super(userMessage);
 
-	void init(DataEventService dataEventService) {
-		dataEventService.registerOnFileFound(this);
-	}
+    void init(DataEventService dataEventService) {
+        dataEventService.registerOnFileFound(this);
+    }
 
-	void onFileFound(Reporters reporters, File file, String fileName) {
+    void onFileFound(Reporters reporters, File file, String fileName) {
+        if (filesToIgnore != null) {
+            for (String fileToIgnore in filesToIgnore) {
+                if (fileToIgnore == file.path) {
+                    reporters.verbose("Ignoring to see if the file \"${file.path}\" is empty.");
+                    return;
+                }
+            }
+        }
 
-		if (filesToIgnore != null) {
+        int length = file.lengthSync();
 
-			for (String fileToIgnore in filesToIgnore) {
+        if (length == 0) {
+            StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file \"$fileName\" is empty.", userMessage);
+            error.addMetaData("filename", fileName);
+            error.addMetaData("file", file.path);
 
-				if (fileToIgnore == file.path) {
-					reporters.verbose("Ignoring to see if the file \"${file.path}\" is empty.");
-					return;
-				}
-
-			}
-
-		}
-
-		int length = file.lengthSync();
-
-		if (length == 0) {
-
-			StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file \"$fileName\" is empty.", userMessage);
-			error.addMetaData("filename", fileName);
-			error.addMetaData("file", file.path);
-
-			reportError(error);
-
-		}
-
-	}
+            reportError(error);
+        }
+    }
 
 }

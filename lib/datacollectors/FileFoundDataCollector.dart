@@ -23,78 +23,67 @@ import "../core/PlanemoConfiguration.dart";
 import "./AbstractDataCollector.dart";
 import "./interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
-import "../reporting/Reporters.dart";
 import "../services/DataEventService.dart";
 
 class FileFoundDataCollector extends AbstractDataCollector implements OnFileFoundObserverInterface {
 
-	final PlanemoConfiguration _configuration;
+    final PlanemoConfiguration _configuration;
 
-	FileFoundDataCollector(PlanemoConfiguration this._configuration, Reporters reporters, DataEventService dataEventService) : super(reporters, dataEventService);
+    FileFoundDataCollector(PlanemoConfiguration this._configuration, Reporters reporters, DataEventService dataEventService) : super(reporters, dataEventService);
 
-	void onFileFound(Reporters reporters, File file, String fileName) {
+    void onFileFound(Reporters reporters, File file, String fileName) {
+        reporters.verbose("Evaluating the file \"$file\".");
 
-		reporters.verbose("Evaluating the file \"$file\".");
+        if (!file.existsSync()) {
+            throw new Exception("The file \"$file\" does not exist.");
+        } else
+        if (isJavaScriptFile(file)) {
+            dataEventService.javaScriptFileFound(file, fileName);
+            _FileReadResults results = readFile(file);
+            dataEventService.onJavaScriptFileRead(file, fileName, results.contents, results.contentRows);
+        } else
+        if (isLESSFile(file)) {
+            dataEventService.LESSFileFound(file, fileName);
+            _FileReadResults results = readFile(file);
+            dataEventService.onLESSFileRead(file, fileName, results.contents, results.contentRows);
+        } else
+        if (isHTMLFile(file)) {
+            dataEventService.HTMLFileFound(file, fileName);
+            _FileReadResults results = readFile(file);
+            dataEventService.onHTMLFileRead(file, fileName, results.contents, results.contentRows);
+        }
+    }
 
-		if (!file.existsSync()) {
+    _FileReadResults readFile(File file) {
+        reporters.verbose("Reading file \"${file.path}\".");
 
-			throw new Exception("The file \"$file\" does not exist.");
+        String contents = file.readAsStringSync();
 
-		} else if (isJavaScriptFile(file)) {
+        return new _FileReadResults(contents);
+    }
 
-			dataEventService.javaScriptFileFound(file, fileName);
-			_FileReadResults results = readFile(file);
-			dataEventService.onJavaScriptFileRead(file, fileName, results.contents, results.contentRows);
+    bool isJavaScriptFile(File file) {
+        return file.path.toLowerCase().endsWith(".js");
+    }
 
-		} else if (isLESSFile(file)) {
+    bool isHTMLFile(File file) {
+        return file.path.toLowerCase().endsWith(".html");
+    }
 
-			dataEventService.LESSFileFound(file, fileName);
-			_FileReadResults results = readFile(file);
-			dataEventService.onLESSFileRead(file, fileName, results.contents, results.contentRows);
-
-		} else if (isHTMLFile(file)) {
-
-			dataEventService.HTMLFileFound(file, fileName);
-			_FileReadResults results = readFile(file);
-			dataEventService.onHTMLFileRead(file, fileName, results.contents, results.contentRows);
-
-		}
-
-	}
-
-	_FileReadResults readFile(File file) {
-
-		reporters.verbose("Reading file \"${file.path}\".");
-
-		String contents = file.readAsStringSync();
-
-		return new _FileReadResults(contents);
-
-	}
-
-	bool isJavaScriptFile(File file) {
-		return file.path.toLowerCase().endsWith(".js");
-	}
-
-	bool isHTMLFile(File file) {
-		return file.path.toLowerCase().endsWith(".html");
-	}
-
-	bool isLESSFile(File file) {
-		return file.path.toLowerCase().endsWith(".less");
-	}
+    bool isLESSFile(File file) {
+        return file.path.toLowerCase().endsWith(".less");
+    }
 
 }
 
 class _FileReadResults {
 
-	final String contents;
+    final String contents;
 
-	_FileReadResults(String this.contents);
+    _FileReadResults(String this.contents);
 
-	List<String> get contentRows {
-		return contents.split("\n");
-	}
+    List<String> get contentRows {
+        return contents.split("\n");
+    }
 
 }

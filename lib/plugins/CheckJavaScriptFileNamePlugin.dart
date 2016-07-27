@@ -18,26 +18,22 @@
 library CheckJavaScriptFileNamePlugin;
 
 import "dart:io";
-import "package:path/path.dart" as path;
 
 import "AbstractCheckFileNamePlugin.dart";
-import "../error/StaticCodeAnalysisError.dart";
 import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
-import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
 
 class CheckJavaScriptFileNamePlugin extends AbstractCheckFileNamePlugin implements OnJavaScriptFileFoundObserverInterface {
 
-	CheckJavaScriptFileNamePlugin(String pattern, {String ignoreFilesPattern:null, String userMessage}): super(pattern, ignoreFilesPattern, userMessage);
+    CheckJavaScriptFileNamePlugin(String pattern, {String ignoreFilesPattern: null, String userMessage}) : super(pattern, ignoreFilesPattern, userMessage);
 
-	void init(DataEventService dataEventService) {
-		dataEventService.registerOnJavaScriptFileFound(this);
-	}
+    void init(DataEventService dataEventService) {
+        dataEventService.registerOnJavaScriptFileFound(this);
+    }
 
-	void onJavaScriptFileFound(Reporters reporters, File file, String fileName) {
-		checkFileName(reporters, file, fileName);
-	}
+    void onJavaScriptFileFound(Reporters reporters, File file, String fileName) {
+        checkFileName(reporters, file, fileName);
+    }
 
 }

@@ -30,14 +30,15 @@ import "../services/DataEventService.dart";
 
 class DisallowJavaScriptFileContentsPlugin extends AbstractDisallowFileContentsPlugin implements OnJavaScriptFileReadObserver {
 
-	DisallowJavaScriptFileContentsPlugin(String disallowContentPattern, {String matchingFilesPattern:null, String ignoreFilesPattern:null, String userMessage:null}): super(disallowContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern:ignoreFilesPattern, userMessage:userMessage);
+    DisallowJavaScriptFileContentsPlugin(String disallowContentPattern, {String matchingFilesPattern: null, String ignoreFilesPattern: null, String userMessage: null})
+        : super(disallowContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern: ignoreFilesPattern, userMessage: userMessage);
 
-	void init(DataEventService dataEventService) {
-		dataEventService.registerOnJavaScriptFileReadObserver(this);
-	}
+    void init(DataEventService dataEventService) {
+        dataEventService.registerOnJavaScriptFileReadObserver(this);
+    }
 
-	void onJavaScriptFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
-		checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
-	}
+    void onJavaScriptFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
+        checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
+    }
 
 }

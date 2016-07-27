@@ -34,38 +34,38 @@ import "../services/DataEventService.dart";
 
 abstract class AbstractPlugin {
 
-	/**
-	 * Variable: userMessage
-	 *
-	 * 		Contains the message to user if an error is thrown.
-	 */
+    /**
+     * Variable: userMessage
+     *
+     * 		Contains the message to user if an error is thrown.
+     */
 
-	final String userMessage;
-	Reporters _reporters;
-	ErrorReporter _errorReporter;
+    final String userMessage;
+    Reporters _reporters;
+    ErrorReporter _errorReporter;
 
-	AbstractPlugin(String this.userMessage);
+    AbstractPlugin(String this.userMessage);
 
-	registerErrorReporter(Reporters reporters, ErrorReporter errorReporter) {
-		_reporters = reporters;
-		_errorReporter = errorReporter;
-	}
+    registerErrorReporter(Reporters reporters, ErrorReporter errorReporter) {
+        _reporters = reporters;
+        _errorReporter = errorReporter;
+    }
 
-	reportError(StaticCodeAnalysisError error) {
-		_errorReporter.error(error);
-		_reporters.error(error);
-	}
+    reportError(StaticCodeAnalysisError error) {
+        _errorReporter.error(error);
+        _reporters.error(error);
+    }
 
-	/**
-	 * method: init
-	 *
-	 * 		Initializes the plugin.
-	 *
-	 * Arguments:
-	 *
-	 * 		dataEventService - <DataEventService>
-	 */
+    /**
+     * method: init
+     *
+     * 		Initializes the plugin.
+     *
+     * Arguments:
+     *
+     * 		dataEventService - <DataEventService>
+     */
 
-	void init(DataEventService dataEventService);
+    void init(DataEventService dataEventService);
 
 }

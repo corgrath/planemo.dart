@@ -15,11 +15,13 @@
 * information regarding copyright ownership.
 */
 
+import "dart:io";
+
 import "package:planemo.dart/Planemo.dart.dart";
 
 void main(List<String> arguments) {
     bool useColors = true;
-    bool verbose = false;
+    bool verbose = true;
 
     /*
      * Planemo configuration
@@ -31,10 +33,10 @@ void main(List<String> arguments) {
 
     // Create the configuration object
     PlanemoConfiguration configuration = new PlanemoConfiguration(reporters);
-    configuration.sourceRoot = "..\\lib\\";
+    configuration.sourceRoot = "..${Platform.pathSeparator}lib${Platform.pathSeparator}";
 
     // Directories to ignore
-    //	configuration.addDirectoryToIgnore(".\\.git");
+    	configuration.addDirectoryToIgnore(".\\.git");
     //	configuration.addDirectoryToIgnore(".\\.idea");
     //	configuration.addDirectoryToIgnore(".\\packages");
     //	configuration.addDirectoryToIgnore(".\\resources");

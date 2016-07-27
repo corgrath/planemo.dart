@@ -22,75 +22,64 @@ import "dart:io";
 import "package:path/path.dart" as path;
 import "AbstractDataCollector.dart";
 import "interfaces/data-event-observer-interfaces.dart";
-import "../util/DirectoryUtilLibrary.dart" as DirectoryUtil;
+import "../utils/DirUtil.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
 import "../services/DataEventService.dart";
 
 class DirectoryFoundDataCollector extends AbstractDataCollector implements OnDirectoryFoundObserverInterface {
 
-	DirectoryFoundDataCollector(Reporters reporters, DataEventService dataEventService) : super(reporters, dataEventService);
+    DirectoryFoundDataCollector(Reporters reporters, DataEventService dataEventService) : super(reporters, dataEventService);
 
-	void onDirectoryFound(Reporters reporters, Directory directory, List<Directory> directoriesToIgnore) {
+    void onDirectoryFound(Reporters reporters, Directory directory, List<Directory> directoriesToIgnore) {
+        reporters.verbose("Evaluating the directory \"${directory.path}\".");
 
-		reporters.verbose("Evaluating the directory \"${directory.path}\".");
+        if (!directory.existsSync()) {
+            throw new Exception("The directory \"${directory.path}\" does not exist.");
+        }
 
-		if (!directory.existsSync()) {
-			throw new Exception("The directory \"${directory.path}\" does not exist.");
-		}
+        //        if (directory.path.contains("translate")) {
+        //            print(directory);
+        //            print(directoriesToIgnore);
+        //            throw new Error();return;
+        //        }
 
-		//        if (directory.path.contains("translate")) {
-		//            print(directory);
-		//            print(directoriesToIgnore);
-		//            throw new Error();return;
-		//        }
+        //        if (directoriesToIgnore.contains(directory)) {
+        //            reporters.verbose("Ignoring to go into folder \"" + newDirectory + "\" (\"" + fileService.getResolvedPath(newDirectory) + "\").");
+        //            return;
+        //        }
 
-		//        if (directoriesToIgnore.contains(directory)) {
-		//            reporters.verbose("Ignoring to go into folder \"" + newDirectory + "\" (\"" + fileService.getResolvedPath(newDirectory) + "\").");
-		//            return;
-		//        }
+        List<FileSystemEntity> items = directory.listSync();
+        //        print("contents of $directory is $items");
 
-		List<FileSystemEntity> items = directory.listSync();
-		//        print("contents of $directory is $items");
+        forEachEntity:
+        for (FileSystemEntity entity in items) {
+            if (entity is Directory) {
+                reporters.verbose("Found the new directory \"$entity\".");
+                //                print("Found the new directory \"$entity\".");
 
-		forEachEntity: for (FileSystemEntity entity in items) {
+                // Check if we should ignore the directory
+                for (Directory directoryToIgnore in directoriesToIgnore) {
+                    //                    print("0 " + entity.path);
+                    //                    print("1 " + directoryToIgnore.path);
+                    if (DirUtil.isSameDirectory(entity, directoryToIgnore)) {
+                        //                        print("Ignoring to go into directory \"${entity.path}\".");
+                        reporters.verbose("Ignoring to go into directory \"${entity.path}\".");
+                        continue forEachEntity;
+                    }
+                }
+                //                print("really passed \"$entity\".");
+                dataEventService.directoryFound(entity, directoriesToIgnore);
+            } else
+            if (entity is File) {
+                reporters.verbose("Found the file \"$entity\".");
 
-			if (entity is Directory) {
+                String fileName = path.basename(entity.path);
 
-				reporters.verbose("Found the new directory \"$entity\".");
-				//                print("Found the new directory \"$entity\".");
-
-				// Check if we should ignore the directory
-				for (Directory directoryToIgnore in directoriesToIgnore) {
-
-					//                    print("0 " + entity.path);
-					//                    print("1 " + directoryToIgnore.path);
-					if (DirectoryUtil.isSameDirectory(entity, directoryToIgnore)) {
-						//                        print("Ignoring to go into directory \"${entity.path}\".");
-						reporters.verbose("Ignoring to go into directory \"${entity.path}\".");
-						continue forEachEntity;
-					}
-
-				}
-				//                print("really passed \"$entity\".");
-				dataEventService.directoryFound(entity, directoriesToIgnore);
-
-			} else if (entity is File) {
-
-				reporters.verbose("Found the file \"$entity\".");
-
-				String fileName = path.basename(entity.path);
-
-				dataEventService.fileFound(entity, fileName);
-
-			} else {
-
-				throw new Exception("Unknown type for entity \"$entity\".");
-
-			}
-
-		}
-
-	}
+                dataEventService.fileFound(entity, fileName);
+            } else {
+                throw new Exception("Unknown type for entity \"$entity\".");
+            }
+        }
+    }
 
 }

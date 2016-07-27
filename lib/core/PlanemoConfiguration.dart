@@ -20,8 +20,10 @@
  */
 
 import "../plugins/AbstractPlugin.dart";
+import "../reporting/Reporters.dart";
 import "../reporting/Reporter.dart";
-import "../reporting/DefaultReporter.dart";
+import "../utils/AssertUtil.dart";
+import "../utils/DirUtil.dart";
 
 /**
  * Class: PlanemoConfiguration
@@ -85,13 +87,14 @@ class PlanemoConfiguration {
      * Performs basic validation of the configuration settings.
      */
 
-    void validate() {
+    void validate(Reporters reporters) {
         if (_reporters.isEmpty) {
             throw new Exception("List of reporters is empty.");
         }
 
+        reporters.verbose("Source directory is \"${DirUtil.getAbsolutePath(sourceRoot)}\".");
 
-
+        AssertUtil.shouldBeDirectory(sourceRoot);
     }
 
 }

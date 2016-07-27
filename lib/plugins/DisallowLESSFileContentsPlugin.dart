@@ -30,14 +30,15 @@ import "../services/DataEventService.dart";
 
 class DisallowLESSFileContentsPlugin extends AbstractDisallowFileContentsPlugin implements OnLESSFileReadObserver {
 
-	DisallowLESSFileContentsPlugin(String disallowContentPattern, {String matchingFilesPattern:null, String ignoreFilesPattern:null, String userMessage:null}): super(disallowContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern:ignoreFilesPattern, userMessage:userMessage);
+    DisallowLESSFileContentsPlugin(String disallowContentPattern, {String matchingFilesPattern: null, String ignoreFilesPattern: null, String userMessage: null})
+        : super(disallowContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern: ignoreFilesPattern, userMessage: userMessage);
 
-	void init(DataEventService dataEventService) {
-		dataEventService.registerOnLESSFileReadObserver(this);
-	}
+    void init(DataEventService dataEventService) {
+        dataEventService.registerOnLESSFileReadObserver(this);
+    }
 
-	void onLESSFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
-		checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
-	}
+    void onLESSFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
+        checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
+    }
 
 }

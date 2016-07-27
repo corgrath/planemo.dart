@@ -34,60 +34,60 @@ library StaticCodeAnalysisError;
 
 class StaticCodeAnalysisError {
 
-	final String _message;
-	final String _userMessage;
+    final String _message;
+    final String _userMessage;
 
-	Map<String, Object> _metaData;
+    Map<String, Object> _metaData;
 
-	StaticCodeAnalysisError(String this._message, String this._userMessage) {
-		_metaData = new Map<String, Object>();
-	}
+    StaticCodeAnalysisError(String this._message, String this._userMessage) {
+        _metaData = new Map<String, Object>();
+    }
 
-	/**
-	 * Method: getMessage
-	 *
-	 * 		Returns the message.
-	 *
-	 * 	Returns:
-	 *
-	 * 		The message.
-	 */
+    /**
+     * Method: getMessage
+     *
+     * 		Returns the message.
+     *
+     * 	Returns:
+     *
+     * 		The message.
+     */
 
-	String getMessage() {
-		return _message;
-	}
+    String getMessage() {
+        return _message;
+    }
 
-	/**
-	 * Method: getUserMessage
-	 *
-	 * 		Returns the user message.
-	 *
-	 * 	Returns:
-	 *
-	 * 		The user message.
-	 */
+    /**
+     * Method: getUserMessage
+     *
+     * 		Returns the user message.
+     *
+     * 	Returns:
+     *
+     * 		The user message.
+     */
 
-	String getUserMessage() {
-		return _userMessage;
-	}
+    String getUserMessage() {
+        return _userMessage;
+    }
 
-	/**
-	 * Method: addMetaData
-	 *
-	 * 		Add meta information to the error.
-	 *
-	 * 	Arguments:
-	 *
-	 * 		name - Name of the meta data
-	 * 		value - The value of the meta data
-	 */
+    /**
+     * Method: addMetaData
+     *
+     * 		Add meta information to the error.
+     *
+     * 	Arguments:
+     *
+     * 		name - Name of the meta data
+     * 		value - The value of the meta data
+     */
 
-	void addMetaData(String name, Object value) {
-		_metaData[name] = value;
-	}
+    void addMetaData(String name, Object value) {
+        _metaData[name] = value;
+    }
 
-	Map<String, String> getMetaData() {
-		return _metaData;
-	}
+    Map<String, String> getMetaData() {
+        return _metaData;
+    }
 
 }

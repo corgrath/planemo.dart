@@ -19,25 +19,22 @@ library DisallowHTMLFileContentsPlugin;
 
 import "dart:io";
 
-import "AbstractPlugin.dart";
 import "AbstractDisallowFileContentsPlugin.dart";
-import "../error/StaticCodeAnalysisError.dart";
 import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
-import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
 
 class DisallowHTMLFileContentsPlugin extends AbstractDisallowFileContentsPlugin implements OnHTMLFileReadObserver {
 
-	DisallowHTMLFileContentsPlugin(String disallowContentPattern, {String matchingFilesPattern:null, String ignoreFilesPattern:null, String userMessage:null}): super(disallowContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern:ignoreFilesPattern, userMessage:userMessage);
+    DisallowHTMLFileContentsPlugin(String disallowContentPattern, {String matchingFilesPattern: null, String ignoreFilesPattern: null, String userMessage: null})
+        : super(disallowContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern: ignoreFilesPattern, userMessage: userMessage);
 
-	void init(DataEventService dataEventService) {
-		dataEventService.registerOnHTMLFileReadObserver(this);
-	}
+    void init(DataEventService dataEventService) {
+        dataEventService.registerOnHTMLFileReadObserver(this);
+    }
 
-	void onHTMLFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
-		checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
-	}
+    void onHTMLFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
+        checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
+    }
 
 }

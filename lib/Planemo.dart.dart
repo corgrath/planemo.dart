@@ -76,15 +76,15 @@ class Planemo {
          * The setup
          */
 
+        // Create the reporters
+        Reporters reporters = new Reporters(configuration.getReporters());
+
         // First thing to do is to validate the configuration
-        configuration.validate();
+        configuration.validate(reporters);
 
         // Create and start a stop watch to keep track on the execution time
         Stopwatch stopwatch = new Stopwatch()
             ..start();
-
-        // Create the reporters
-        Reporters reporters = new Reporters(configuration.getReporters());
 
         // Tell the reporters Planemo is started
         reporters.start(VERSION);

@@ -22,14 +22,10 @@
 library AbstractCheckFileNamePlugin;
 
 import "dart:io";
-import "package:path/path.dart" as path;
 
 import "AbstractPlugin.dart";
 import "../error/StaticCodeAnalysisError.dart";
-import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
-import "../error/StaticCodeAnalysisError.dart";
 
 /**
  * Class: AbstractCheckFileNamePlugin
@@ -43,35 +39,29 @@ import "../error/StaticCodeAnalysisError.dart";
 
 abstract class AbstractCheckFileNamePlugin extends AbstractPlugin {
 
-	final String pattern;
-	final String ignoreFilesPattern;
+    final String pattern;
+    final String ignoreFilesPattern;
 
-	AbstractCheckFileNamePlugin(String this.pattern, String this.ignoreFilesPattern, String userMessage): super(userMessage);
+    AbstractCheckFileNamePlugin(String this.pattern, String this.ignoreFilesPattern, String userMessage) : super(userMessage);
 
-	void checkFileName(Reporters reporters, File file, String fileName) {
+    void checkFileName(Reporters reporters, File file, String fileName) {
+        if (ignoreFilesPattern != null) {
+            RegExp regexpIgnoreFilesPattern = new RegExp(ignoreFilesPattern);
 
-		if (ignoreFilesPattern != null) {
+            if (file.path.contains(regexpIgnoreFilesPattern)) {
+                return;
+            }
+        }
 
-			RegExp regexpIgnoreFilesPattern = new RegExp(ignoreFilesPattern);
+        RegExp expression = new RegExp(pattern);
 
-			if (file.path.contains(regexpIgnoreFilesPattern)) {
-				return;
-			}
+        if (!fileName.contains(expression)) {
+            StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file name \"$fileName\" is not valid as it does not comply with the pattern \"$pattern\".", userMessage);
+            error.addMetaData("filename", fileName);
+            error.addMetaData("file", file.path);
 
-		}
-
-		RegExp expression = new RegExp(pattern);
-
-		if (!fileName.contains(expression)) {
-
-			StaticCodeAnalysisError error = new StaticCodeAnalysisError("The file name \"$fileName\" is not valid as it does not comply with the pattern \"$pattern\".", userMessage);
-			error.addMetaData("filename", fileName);
-			error.addMetaData("file", file.path);
-
-			reportError(error);
-
-		}
-
-	}
+            reportError(error);
+        }
+    }
 
 }

@@ -32,42 +32,42 @@ import "../error/StaticCodeAnalysisError.dart";
 
 abstract class Reporter {
 
-	/**
-	 * Method: start
-	 *
-	 *		Called when Planemo is started.
-	 *
-	 * Arguments:
-	 *
-	 * 		version - The Planemo version number.
-	 */
+    /**
+     * Method: start
+     *
+     *		Called when Planemo is started.
+     *
+     * Arguments:
+     *
+     * 		version - The Planemo version number.
+     */
 
-	void start(String version);
+    void start(String version);
 
-	/**
-	 * Method: verbose
-	 *
-	 *		Called when different verbose stuff happens.
-	 *
-	 * Arguments:
-	 *
-	 * 		message - The message that is classified as verbose.
-	 */
+    /**
+     * Method: verbose
+     *
+     *		Called when different verbose stuff happens.
+     *
+     * Arguments:
+     *
+     * 		message - The message that is classified as verbose.
+     */
 
-	void verbose(String message);
+    void verbose(String message);
 
-	/**
-	 * Method: error
-	 *
-	 *		Called when a plugin throws an error.
-	 *
-	 * Arguments:
-	 *
-	 * 		<StaticCodeAnalysisError> message - A <StaticCodeAnalysisError> error.
-	 */
+    /**
+     * Method: error
+     *
+     *		Called when a plugin throws an error.
+     *
+     * Arguments:
+     *
+     * 		<StaticCodeAnalysisError> message - A <StaticCodeAnalysisError> error.
+     */
 
-	void error(StaticCodeAnalysisError error);
+    void error(StaticCodeAnalysisError error);
 
-	void done(ErrorReporter errorReporter, int executionDuration);
+    void done(ErrorReporter errorReporter, int executionDuration);
 
 }

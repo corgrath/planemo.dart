@@ -50,14 +50,15 @@ import "../services/DataEventService.dart";
 
 class EnforceJavaScriptFileContentsPlugin extends AbstractEnforceFileContentsPlugin implements OnJavaScriptFileReadObserver {
 
-	EnforceJavaScriptFileContentsPlugin(String enforceContentPattern, {String matchingFilesPattern:null, String ignoreFilesPattern:null, String userMessage:null}): super(enforceContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern:ignoreFilesPattern, userMessage:userMessage);
+    EnforceJavaScriptFileContentsPlugin(String enforceContentPattern, {String matchingFilesPattern: null, String ignoreFilesPattern: null, String userMessage: null})
+        : super(enforceContentPattern, matchingFilesPattern: matchingFilesPattern, ignoreFilesPattern: ignoreFilesPattern, userMessage: userMessage);
 
-	void init(DataEventService dataEventService) {
-		dataEventService.registerOnJavaScriptFileReadObserver(this);
-	}
+    void init(DataEventService dataEventService) {
+        dataEventService.registerOnJavaScriptFileReadObserver(this);
+    }
 
-	void onJavaScriptFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
-		checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
-	}
+    void onJavaScriptFileRead(Reporters reporters, File file, String fileName, String fileContents, List<String> fileContentRows) {
+        checkFileContents(reporters, file, fileName, fileContents, fileContentRows);
+    }
 
 }

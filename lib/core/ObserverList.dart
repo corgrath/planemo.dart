@@ -15,8 +15,6 @@
 * information regarding copyright ownership.
 */
 
-import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
-
 class ObserverList<Observer> {
 
     List<Observer> _observers;

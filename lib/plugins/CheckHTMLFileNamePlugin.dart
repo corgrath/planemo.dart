@@ -18,26 +18,22 @@
 library CheckHTMLFileNamePlugin;
 
 import "dart:io";
-import "package:path/path.dart" as path;
 
 import "AbstractCheckFileNamePlugin.dart";
-import "../error/StaticCodeAnalysisError.dart";
 import "../datacollectors/interfaces/data-event-observer-interfaces.dart";
 import "../reporting/Reporters.dart";
-import "../reporting/ErrorReporter.dart";
-import "../error/StaticCodeAnalysisError.dart";
 import "../services/DataEventService.dart";
 
 class CheckHTMLFileNamePlugin extends AbstractCheckFileNamePlugin implements OnHTMLFileFoundObserverInterface {
 
-	CheckHTMLFileNamePlugin(String pattern, {String ignoreFilesPattern:null, String userMessage}): super(pattern, ignoreFilesPattern, userMessage);
+    CheckHTMLFileNamePlugin(String pattern, {String ignoreFilesPattern: null, String userMessage}) : super(pattern, ignoreFilesPattern, userMessage);
 
-	void init(DataEventService dataEventService) {
-		dataEventService.registerOnHTMLFileFound(this);
-	}
+    void init(DataEventService dataEventService) {
+        dataEventService.registerOnHTMLFileFound(this);
+    }
 
-	void onHTMLFileFound(Reporters reporters, File file, String fileName) {
-		checkFileName(reporters, file, fileName);
-	}
+    void onHTMLFileFound(Reporters reporters, File file, String fileName) {
+        checkFileName(reporters, file, fileName);
+    }
 
 }
